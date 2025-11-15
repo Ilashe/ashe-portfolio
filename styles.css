@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #22d3ee, #3b82f6, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #22d3ee;
+}
+
+.btn-primary {
+    background: #06b6d4;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0891b2;
+}
+
+.btn-secondary {
+    border: 2px solid #06b6d4;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background: rgba(6, 182, 212, 0.1);
+}
+
+.card {
+    transition: border-color 0.3s;
+}
+
+.card-cyan:hover {
+    border-color: #06b6d4;
+}
+
+.card-purple:hover {
+    border-color: #a855f7;
+}
+
+.card-blue:hover {
+    border-color: #3b82f6;
+}
+
+.card-green:hover {
+    border-color: #10b981;
+}
+
+.card-yellow:hover {
+    border-color: #eab308;
+}
+
+.card-pink:hover {
+    border-color: #ec4899;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    margin: 0.25rem;
+}
+
+.skill-tag-cyan {
+    background: rgba(6, 182, 212, 0.2);
+    color: #67e8f9;
+}
+
+.skill-tag-purple {
+    background: rgba(168, 85, 247, 0.2);
+    color: #d8b4fe;
+}
+
+.skill-tag-blue {
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+}
+
+.skill-tag-green {
+    background: rgba(16, 185, 129, 0.2);
+    color: #6ee7b7;
+}
+
+.skill-tag-yellow {
+    background: rgba(234, 179, 8, 0.2);
+    color: #fde047;
+}
+
+.skill-tag-pink {
+    background: rgba(236, 72, 153, 0.2);
+    color: #f9a8d4;
+}
