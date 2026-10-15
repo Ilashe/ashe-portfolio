@@ -2,6 +2,6 @@ Ashe Sule is an IT Professional with extensive expertise in systems administrati
 
 Education: Bachelor of Science (B.Sc.), Covenant University.
 
-Certifications: CISSP; Microsoft 365 Enterprise Administrator Expert; Microsoft 365 Security Administrator Associate; SC-401 Administering Information Security in Microsoft 365; SC-200 Security Operations Analyst; AZ-500 Azure Security Engineer; AZ-104 Azure Administrator; AI-103 Developing AI Apps and Agents on Azure; Cisco CCNP; Cisco CCNA; ITIL Expert; Scrum Master; Microsoft Certified Trainer (MCT).
+Certifications: CISSP; Microsoft 365 Enterprise Administrator Expert; Microsoft 365 Security Administrator Associate; SC-401 Administering Information Security in Microsoft 365; SC-200 Security Operations Analyst; AZ-500 Azure Security Engineer; AI-103 Developing AI Apps and Agents on Azure; Azure Administrator; Cisco CCNP; Cisco CCNA; ITIL Expert; Microsoft Certified Trainer (MCT).
 
 Website: https://ashesule.com/
