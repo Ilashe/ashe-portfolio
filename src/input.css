@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem; /* keep section headings clear of the fixed nav */
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    a:focus-visible {
+        outline: 2px solid #d4af37;
+        outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+}
+
+@layer components {
+    .skip-link {
+        @apply sr-only;
+    }
+
+    .skip-link:focus {
+        @apply not-sr-only fixed top-2 left-2 z-[60] px-4 py-2 rounded-lg bg-gold text-slate-900 font-semibold;
+    }
+
+    .nav-link {
+        transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+        color: #22d3ee;
+    }
+
+    .btn-gold {
+        @apply bg-gold text-slate-800 transition-all duration-300;
+    }
+
+    .btn-gold:hover {
+        @apply bg-gold-light;
+    }
+
+    .btn-gold-outline {
+        @apply border-gold text-gold transition-all duration-300;
+    }
+
+    .btn-gold-outline:hover {
+        background: rgba(212, 175, 55, 0.1);
+    }
+
+    .card {
+        transition: border-color 0.3s;
+    }
+
+    .card:hover {
+        border-color: #3b82f6;
+    }
+
+    .skill-tag {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        margin: 0.25rem;
+        background: rgba(59, 130, 246, 0.2);
+        color: #93c5fd;
+    }
+
+    .cert-code {
+        @apply inline-block px-2 py-0.5 rounded text-xs font-semibold align-middle;
+        background: rgba(212, 175, 55, 0.15);
+        color: #f4d06f;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(212, 175, 55, 0.1);
+        color: #d4af37;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+    .social-link:hover {
+        background: rgba(212, 175, 55, 0.2);
+        border-color: #d4af37;
+        color: #f4d06f;
+        transform: translateY(-3px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .social-link:hover {
+            transform: none;
+        }
+    }
+
+    .edu-card {
+        @apply flex items-center gap-5 p-6 rounded-xl border bg-slate-800/50 text-left;
+        border-color: rgba(212, 175, 55, 0.35);
+    }
+
+    .edu-icon {
+        @apply flex items-center justify-center shrink-0 w-14 h-14 rounded-full text-gold;
+        background: rgba(212, 175, 55, 0.12);
+    }
+
+    .stat-chip {
+        @apply px-4 py-2 rounded-full text-sm text-slate-300 bg-slate-800/60 border border-slate-700;
+    }
+
+    .stat-chip strong {
+        @apply text-gold-light font-semibold;
+    }
+
+    .cert-group {
+        @apply flex items-center gap-3 text-sm font-semibold uppercase tracking-widest text-slate-400 mb-5;
+    }
+
+    .cert-group::after {
+        content: '';
+        @apply flex-1 h-px bg-slate-700;
+    }
+
+    .cert-card {
+        @apply h-full p-5 rounded-lg border border-slate-700 bg-slate-800/50 border-t-2;
+        border-top-color: rgba(212, 175, 55, 0.6);
+        transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .cert-card:hover {
+        border-color: #d4af37;
+        transform: translateY(-2px);
+    }
+
+    .cert-issuer {
+        @apply text-xs font-semibold uppercase tracking-wider text-blue-300;
+    }
+
+    .cert-level {
+        @apply inline-block px-2 py-0.5 rounded text-xs font-medium bg-slate-700 text-slate-200;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .cert-card:hover {
+            transform: none;
+        }
+    }
+}

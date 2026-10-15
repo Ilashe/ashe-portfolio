@@ -1,0 +1,12 @@
+{
+  "name": "ashe-portfolio",
+  "private": true,
+  "description": "Personal site for Ashe Sule - ashesule.com",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
