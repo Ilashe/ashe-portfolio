@@ -12,6 +12,11 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
 
+    ::selection {
+        background: rgba(212, 175, 55, 0.35);
+        color: #fff;
+    }
+
     a:focus-visible {
         outline: 2px solid #d4af37;
         outline-offset: 3px;
@@ -33,84 +38,239 @@
         @apply not-sr-only fixed top-2 left-2 z-[60] px-4 py-2 rounded-lg bg-gold text-slate-900 font-semibold;
     }
 
+    /* ---------- Decorative background ---------- */
+    .bg-decor {
+        @apply fixed inset-0 -z-10 overflow-hidden pointer-events-none;
+    }
+
+    .glow {
+        @apply absolute rounded-full;
+        filter: blur(120px);
+        opacity: 0.35;
+    }
+
+    .glow-gold {
+        width: 38rem;
+        height: 38rem;
+        top: -12rem;
+        right: -10rem;
+        background: radial-gradient(circle, rgba(212, 175, 55, 0.55), transparent 70%);
+    }
+
+    .glow-blue {
+        width: 42rem;
+        height: 42rem;
+        bottom: -16rem;
+        left: -14rem;
+        background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent 70%);
+    }
+
+    .grid-pattern {
+        @apply absolute inset-0;
+        background-image: radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+        background-size: 28px 28px;
+        -webkit-mask-image: radial-gradient(ellipse at 50% 20%, #000 30%, transparent 75%);
+        mask-image: radial-gradient(ellipse at 50% 20%, #000 30%, transparent 75%);
+    }
+
+    /* ---------- Navigation ---------- */
+    .site-nav {
+        @apply fixed w-full z-50 border-b border-white/5 backdrop-blur-md;
+        background: rgba(11, 17, 32, 0.75);
+    }
+
+    .brand {
+        @apply text-xl sm:text-2xl font-extrabold tracking-tight text-white;
+    }
+
     .nav-link {
-        transition: color 0.3s;
+        @apply relative inline-flex items-center px-3 py-2 rounded-md text-sm font-medium text-slate-300;
+        min-height: 40px;
+        transition: color 0.2s, background-color 0.2s;
     }
 
-    .nav-link:hover {
-        color: #22d3ee;
+    .nav-link:hover,
+    .nav-link.active {
+        @apply text-white bg-white/5;
     }
 
+    .nav-link.active::after {
+        content: '';
+        @apply absolute left-3 right-3 -bottom-px h-0.5 rounded bg-gold;
+    }
+
+    .nav-cta {
+        @apply ml-2 text-gold border border-gold/40;
+    }
+
+    .nav-cta:hover {
+        @apply bg-gold/10 text-gold-light;
+    }
+
+    /* ---------- Buttons ---------- */
     .btn-gold {
-        @apply bg-gold text-slate-800 transition-all duration-300;
+        @apply bg-gold text-slate-900 transition-all duration-300;
+        box-shadow: 0 8px 24px -8px rgba(212, 175, 55, 0.6);
     }
 
     .btn-gold:hover {
         @apply bg-gold-light;
+        transform: translateY(-1px);
+        box-shadow: 0 12px 28px -8px rgba(212, 175, 55, 0.75);
     }
 
     .btn-gold-outline {
-        @apply border-gold text-gold transition-all duration-300;
+        @apply border-2 border-gold text-gold transition-all duration-300;
     }
 
     .btn-gold-outline:hover {
         background: rgba(212, 175, 55, 0.1);
+        transform: translateY(-1px);
     }
 
-    .card {
-        transition: border-color 0.3s;
+    /* ---------- Hero ---------- */
+    .eyebrow-pill {
+        @apply inline-flex flex-wrap items-center justify-center gap-2 mb-8 px-4 py-2 rounded-full text-xs sm:text-sm text-slate-300 border border-white/10 bg-white/5;
     }
 
-    .card:hover {
-        border-color: #3b82f6;
+    .pulse-dot {
+        @apply relative inline-flex w-2 h-2 rounded-full bg-gold;
     }
+
+    .pulse-dot::after {
+        content: '';
+        @apply absolute inset-0 rounded-full bg-gold;
+        animation: pulse-ring 2s ease-out infinite;
+    }
+
+    @keyframes pulse-ring {
+        from { transform: scale(1); opacity: 0.8; }
+        to { transform: scale(3); opacity: 0; }
+    }
+
+    .text-gradient {
+        background: linear-gradient(100deg, #f4d06f 0%, #d4af37 40%, #93c5fd 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .cred-badge {
+        @apply px-4 py-2 rounded-lg text-sm font-semibold text-slate-200 border border-white/10 bg-slate-800/60 backdrop-blur;
+    }
+
+    .scroll-cue {
+        @apply mt-14 mx-auto flex w-11 h-11 items-center justify-center rounded-full text-slate-400 border border-white/10;
+        animation: float 2.4s ease-in-out infinite;
+    }
+
+    .scroll-cue:hover {
+        @apply text-gold border-gold/50;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(8px); }
+    }
+
+    /* ---------- Sections ---------- */
+    .section-alt {
+        background: linear-gradient(180deg, transparent, rgba(30, 41, 59, 0.35) 15%, rgba(30, 41, 59, 0.35) 85%, transparent);
+    }
+
+    .section-head {
+        @apply text-center mb-14;
+    }
+
+    .section-eyebrow {
+        @apply text-xs font-semibold uppercase tracking-[0.25em] text-gold mb-3;
+    }
+
+    .section-title {
+        @apply text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight;
+    }
+
+    .section-title::after {
+        content: '';
+        @apply block w-16 h-1 mx-auto mt-5 rounded-full;
+        background: linear-gradient(90deg, #d4af37, #93c5fd);
+    }
+
+    .glass-card {
+        @apply rounded-2xl border border-white/10 bg-slate-800/40 backdrop-blur;
+    }
+
+    .stat {
+        @apply rounded-xl p-4 bg-slate-900/50 border border-white/5;
+    }
+
+    .stat-label {
+        @apply text-xs uppercase tracking-wider text-slate-400 mb-1;
+    }
+
+    .stat-value {
+        @apply text-3xl font-extrabold text-gold-light;
+    }
+
+    .stat-text {
+        @apply text-sm font-medium text-slate-200;
+    }
+
+    /* ---------- Skills ---------- */
+    .skill-card {
+        @apply relative h-full p-6 rounded-2xl border border-white/10 bg-slate-800/40 backdrop-blur;
+        transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill-card:hover {
+        border-color: rgba(147, 197, 253, 0.45);
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px -20px rgba(59, 130, 246, 0.45);
+    }
+
+    .skill-card-featured {
+        border-color: rgba(212, 175, 55, 0.35);
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(30, 41, 59, 0.5) 45%, rgba(59, 130, 246, 0.1));
+    }
+
+    .skill-card-featured:hover {
+        border-color: rgba(212, 175, 55, 0.7);
+        box-shadow: 0 20px 40px -20px rgba(212, 175, 55, 0.5);
+    }
+
+    .icon-tile {
+        @apply inline-flex shrink-0 items-center justify-center w-12 h-12 rounded-xl border;
+    }
+
+    .icon-gold    { color: #f4d06f; background: rgba(212, 175, 55, 0.15); border-color: rgba(212, 175, 55, 0.35); }
+    .icon-blue    { color: #93c5fd; background: rgba(59, 130, 246, 0.15); border-color: rgba(59, 130, 246, 0.35); }
+    .icon-rose    { color: #fda4af; background: rgba(244, 63, 94, 0.15); border-color: rgba(244, 63, 94, 0.35); }
+    .icon-emerald { color: #6ee7b7; background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.35); }
+    .icon-cyan    { color: #67e8f9; background: rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.35); }
+    .icon-amber   { color: #fcd34d; background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.35); }
+    .icon-violet  { color: #c4b5fd; background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.35); }
 
     .skill-tag {
         display: inline-block;
         padding: 0.25rem 0.75rem;
         border-radius: 9999px;
         font-size: 0.875rem;
-        margin: 0.25rem;
-        background: rgba(59, 130, 246, 0.2);
-        color: #93c5fd;
+        background: rgba(59, 130, 246, 0.15);
+        color: #bfdbfe;
+        border: 1px solid rgba(59, 130, 246, 0.2);
     }
 
-    .cert-code {
-        @apply inline-block px-2 py-0.5 rounded text-xs font-semibold align-middle;
+    .skill-tag-gold {
         background: rgba(212, 175, 55, 0.15);
         color: #f4d06f;
-        border: 1px solid rgba(212, 175, 55, 0.3);
-    }
-
-    .social-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background: rgba(212, 175, 55, 0.1);
-        color: #d4af37;
-        transition: all 0.3s ease;
-        border: 2px solid transparent;
-    }
-
-    .social-link:hover {
-        background: rgba(212, 175, 55, 0.2);
-        border-color: #d4af37;
-        color: #f4d06f;
-        transform: translateY(-3px);
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-        .social-link:hover {
-            transform: none;
-        }
-    }
-
-    .edu-card {
-        @apply flex items-center gap-5 p-6 rounded-xl border bg-slate-800/50 text-left;
         border-color: rgba(212, 175, 55, 0.35);
+    }
+
+    /* ---------- Certifications ---------- */
+    .edu-card {
+        @apply flex items-center gap-5 p-6 rounded-2xl border text-left backdrop-blur;
+        border-color: rgba(212, 175, 55, 0.35);
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(30, 41, 59, 0.5));
     }
 
     .edu-icon {
@@ -119,7 +279,7 @@
     }
 
     .stat-chip {
-        @apply px-4 py-2 rounded-full text-sm text-slate-300 bg-slate-800/60 border border-slate-700;
+        @apply px-4 py-2 rounded-full text-sm text-slate-300 bg-slate-800/60 border border-white/10;
     }
 
     .stat-chip strong {
@@ -136,26 +296,123 @@
     }
 
     .cert-card {
-        @apply h-full p-5 rounded-lg border border-slate-700 bg-slate-800/50 border-t-2;
+        @apply h-full p-5 rounded-xl border border-white/10 bg-slate-800/40 border-t-2 backdrop-blur;
         border-top-color: rgba(212, 175, 55, 0.6);
         transition: border-color 0.3s, transform 0.3s;
     }
 
     .cert-card:hover {
         border-color: #d4af37;
-        transform: translateY(-2px);
+        transform: translateY(-3px);
+    }
+
+    .cert-meta {
+        @apply flex flex-wrap items-center justify-between gap-2 mb-3;
+    }
+
+    .cert-pills {
+        @apply flex flex-wrap gap-2;
     }
 
     .cert-issuer {
         @apply text-xs font-semibold uppercase tracking-wider text-blue-300;
     }
 
+    .cert-code {
+        @apply inline-block px-2 py-0.5 rounded text-xs font-semibold align-middle;
+        background: rgba(212, 175, 55, 0.15);
+        color: #f4d06f;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
     .cert-level {
         @apply inline-block px-2 py-0.5 rounded text-xs font-medium bg-slate-700 text-slate-200;
     }
 
+    /* ---------- Contact / footer ---------- */
+    .cta-panel {
+        @apply relative text-center px-6 py-14 sm:px-12 rounded-3xl border overflow-hidden;
+        border-color: rgba(212, 175, 55, 0.3);
+        background:
+            radial-gradient(ellipse at top, rgba(212, 175, 55, 0.18), transparent 60%),
+            radial-gradient(ellipse at bottom right, rgba(59, 130, 246, 0.15), transparent 60%),
+            rgba(15, 23, 42, 0.7);
+    }
+
+    .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(212, 175, 55, 0.08);
+        color: #d4af37;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .social-link:hover {
+        background: rgba(212, 175, 55, 0.2);
+        border-color: #d4af37;
+        color: #f4d06f;
+        transform: translateY(-3px);
+    }
+
+    .footer-link {
+        @apply inline-flex items-center px-2 py-2 transition-colors;
+        min-height: 40px;
+    }
+
+    .footer-link:hover {
+        @apply text-gold;
+    }
+
+    /* Let long words wrap when text is enlarged (WCAG 1.4.4) */
+    .skill-card div,
+    .skill-card h3,
+    .skill-card p,
+    .skill-tag,
+    .edu-card > div,
+    .cert-card h4,
+    .cred-badge,
+    .eyebrow-pill,
+    .stat-chip {
+        min-width: 0;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    /* ---------- Scroll reveal (only when JS is running) ---------- */
+    .js .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .js .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* ---------- Reduced motion ---------- */
     @media (prefers-reduced-motion: reduce) {
-        .cert-card:hover {
+        .js .reveal {
+            opacity: 1;
+            transform: none;
+            transition: none;
+        }
+
+        .scroll-cue,
+        .pulse-dot::after {
+            animation: none;
+        }
+
+        .btn-gold:hover,
+        .btn-gold-outline:hover,
+        .skill-card:hover,
+        .cert-card:hover,
+        .social-link:hover {
             transform: none;
         }
     }
