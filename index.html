@@ -3,299 +3,460 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IT Professional | Systems admin, network security, CRM (HubSpot/Salesforce), M365, cloud engineering | Microsoft MCT.">
+    <title>Ashe Sule - IT Professional</title>
+    <meta name="description" content="IT Professional | AI engineering, systems admin, network security, CRM (HubSpot/Salesforce), M365, cloud engineering | CISSP, Microsoft MCT.">
     <meta name="author" content="Ashe Sule">
-    <meta name="keywords" content="Marketing Automation, network security, ashe, sule, Terraform, CI/CD Pipeline, suleashe, Active Directory, Ashe sule, Pub/Sub, Cloud SQL, Cloud IAM, Sule ashe, SharePoint, Teams, OneDrive, Exchange ">
-    
+    <meta name="theme-color" content="#0f172a">
+
     <!-- Canonical URL to prevent duplicate content -->
     <link rel="canonical" href="https://ashesule.com/">
 
-    <title>Ashe Sule - IT Professional</title>
-    <!-- Open Graph / Facebook -->
-        <meta property="og:title" content="Ashe Sule - IT Professional">
-        <meta property="og:description" content="IT Professional | Systems admin, network security, CRM (HubSpot/Salesforce), M365, cloud engineering | Microsoft MCT.">
-        <meta property="og:image" content="https://ashesule.com/images/ashe.png">
-        <meta property="og:url" content="https://ashesule.com">
-        <meta property="og:type" content="website">
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image">
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ashe Sule">
+    <meta property="og:url" content="https://ashesule.com/">
+    <meta property="og:title" content="Ashe Sule - IT Professional">
+    <meta property="og:description" content="IT Professional | AI engineering, systems admin, network security, CRM (HubSpot/Salesforce), M365, cloud engineering | CISSP, Microsoft MCT.">
+    <meta property="og:image" content="https://ashesule.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Ashe Sule - IT Professional">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .skill-tag-gold {
-            background: rgba(212, 175, 55, 0.15);
-            color: #f4d06f;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-        }
-        
-        .card-gold:hover {
-            border-color: #d4af37;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-        }
-        
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: rgba(212, 175, 55, 0.1);
-            color: #d4af37;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ashe Sule - IT Professional">
+    <meta name="twitter:description" content="IT Professional | AI engineering, systems admin, network security, CRM (HubSpot/Salesforce), M365, cloud engineering | CISSP, Microsoft MCT.">
+    <meta name="twitter:image" content="https://ashesule.com/images/og-image.png">
 
-        .social-link:hover {
-            background: rgba(212, 175, 55, 0.2);
-            border-color: #d4af37;
-            color: #f4d06f;
-            transform: translateY(-3px);
-        }
-    </style>
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ashe Sule",
+        "jobTitle": "IT Professional",
+        "url": "https://ashesule.com/",
+        "alumniOf": "Covenant University",
+        "sameAs": [
+            "https://www.linkedin.com/in/ashe-s-a5156119a",
+            "https://github.com/ashesule",
+            "https://medium.com/@ashesule",
+            "https://substack.com/@ashesule"
+        ]
+    }
+    </script>
+
+    <!-- Built from src/input.css with `npm run build:css` -->
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <!-- Navigation -->
-    <nav class="fixed w-full bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-700">
-        <div class="max-w-7xl mx-auto px-6 py-4">
+    <nav class="fixed w-full bg-slate-900/95 backdrop-blur-sm z-50 border-b border-slate-700" aria-label="Main">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold" style="color: #d4af37;">Ashe Sule</div>
-                <div class="flex space-x-8">
-                    <a href="#home" class="nav-link text-sm font-medium">Home</a>
+                <a href="#home" class="text-xl sm:text-2xl font-bold text-gold">Ashe Sule</a>
+                <div class="hidden sm:flex space-x-8">
                     <a href="#about" class="nav-link text-sm font-medium">About</a>
                     <a href="#skills" class="nav-link text-sm font-medium">Skills</a>
-                    <a href="#connect" class="nav-link text-sm font-medium">Connect</a>
+                    <a href="#certifications" class="nav-link text-sm font-medium">Certifications</a>
+                    <a href="#connect" class="nav-link text-sm font-medium">Contact</a>
                 </div>
+                <a href="#connect" class="sm:hidden px-4 py-2 rounded-lg text-sm font-semibold bg-gold text-slate-800">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
-        <div class="max-w-4xl text-center">
-            <div class="mb-8">
-                <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-slate-600/50 shadow-2xl">
-                    <div class="w-full h-full bg-gradient-to-br from-slate-700 via-slate-600 to-slate-800 flex items-center justify-center">
-                        <span class="text-2xl font-bold tracking-wider" style="color: #d4af37;">ASHE SULE</span>
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20">
+            <div class="max-w-4xl text-center">
+                <div class="mb-8">
+                    <div class="w-36 h-36 sm:w-48 sm:h-48 mx-auto rounded-full border-4 border-gold/40 shadow-2xl bg-gradient-to-br from-slate-700 via-slate-600 to-slate-800 flex items-center justify-center">
+                        <span class="text-5xl sm:text-6xl font-bold tracking-wider text-gold" aria-hidden="true">AS</span>
                     </div>
                 </div>
-            </div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">
-                Information Technology Professional
-            </h1>
-            <p class="text-xl md:text-2xl mb-8" style="color: #d1d5db;">
-                Transforming teams and technology to deliver exceptional results
-            </p>
-            <div class="flex justify-center space-x-6 flex-wrap gap-4">
-                <a href="#about" class="px-8 py-3 rounded-lg font-semibold transition-all duration-300" style="background-color: #d4af37; color: #1e293b;">
-                    Learn More
-                </a>
-                <a href="#skills" class="px-8 py-3 rounded-lg font-semibold border-2 transition-all duration-300" style="border-color: #d4af37; color: #d4af37;">
-                    View Skills
-                </a>
-            </div>
-            <div class="mt-12 animate-bounce">
-                <svg class="mx-auto" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
-            <div class="max-w-3xl mx-auto text-center">
-                <p class="text-slate-300 mb-6 leading-relaxed text-lg">
-                    IT Professional with comprehensive expertise in systems administration, networking security and administration (including firewalls and multi-layer security architectures), CRM management (HubSpot and Salesforce), Microsoft 365 administration (SharePoint and Power Platform development), and cloud engineering. Experienced in supporting technology operations across the manufacturing, construction, and automation sectors, delivering secure, scalable, and efficiency-driven solutions tailored to complex operational environments.
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-white">
+                    Information Technology Professional
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl mb-8 text-gray-300">
+                    Transforming teams and technology to deliver exceptional results
                 </p>
-                <p class="text-slate-300 mb-8 leading-relaxed text-lg">
-                    Certified in Network Administration/Security, Cybersecurity, HubSpot, Salesforce, and recognized as a Microsoft Certified Trainer (MCT). Demonstrates a proven ability to optimize CRM platforms, automate workflows, streamline processes, and improve business performance. Highly skilled in managing enterprise infrastructure, securing network environments, supporting cloud-based systems, and leading cross-functional teams to deliver reliable, data-driven, and strategically aligned technology outcomes.
+                <div class="flex justify-center flex-wrap gap-4">
+                    <a href="#about" class="btn-gold px-8 py-3 rounded-lg font-semibold">
+                        Learn More
+                    </a>
+                    <a href="#connect" class="btn-gold-outline px-8 py-3 rounded-lg font-semibold border-2">
+                        Get in Touch
+                    </a>
+                </div>
+                <div class="mt-12 motion-safe:animate-bounce" aria-hidden="true">
+                    <svg class="mx-auto" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 sm:px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">About Me</h2>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-slate-300 mb-6 leading-relaxed text-lg">
+                        IT Professional with comprehensive expertise in AI engineering, systems administration, networking security and administration (including firewalls and multi-layer security architectures), CRM management (HubSpot and Salesforce), Microsoft 365 administration (SharePoint and Power Platform development), and cloud engineering. Experienced in supporting technology operations across the manufacturing, construction, and automation sectors, delivering secure, scalable, and efficiency-driven solutions tailored to complex operational environments.
+                    </p>
+                    <p class="text-slate-300 mb-6 leading-relaxed text-lg">
+                        As an AI engineer, designs and builds AI-powered applications and intelligent agents on Microsoft Azure with Microsoft Foundry: from retrieval-augmented generation (RAG) that puts company knowledge to work, to multi-agent workflows that automate everyday business processes. Brings a security-first mindset to every AI solution, with data governance, responsible AI and quality and safety evaluation built in from day one.
+                    </p>
+                    <p class="text-slate-300 mb-8 leading-relaxed text-lg">
+                        CISSP certified, ITIL Expert, Cisco CCNA and CCNP, and holder of multiple Microsoft certifications across Microsoft 365, Azure security and AI. Also certified in HubSpot and Salesforce, and recognized as a Microsoft Certified Trainer (MCT). Demonstrates a proven ability to optimize CRM platforms, automate workflows, streamline processes, and improve business performance. Highly skilled in managing enterprise infrastructure, securing network environments, supporting cloud-based systems, and leading cross-functional teams to deliver reliable, data-driven, and strategically aligned technology outcomes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 px-4 sm:px-6 bg-slate-800/30">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">My Skills</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Google Cloud Platform -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card">
+                        <div class="flex items-center mb-4">
+                            <svg class="text-blue-400 mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Google Cloud Platform</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Cloud Run</span>
+                            <span class="skill-tag">Cloud Functions</span>
+                            <span class="skill-tag">Pub/Sub</span>
+                            <span class="skill-tag">Cloud SQL</span>
+                            <span class="skill-tag">Cloud IAM</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Cloud Build</span>
+                        </div>
+                    </div>
+
+                    <!-- CRM -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card">
+                        <div class="flex items-center mb-4">
+                            <svg class="text-blue-400 mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3 class="text-xl font-semibold">CRM</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">HubSpot &amp; Salesforce administration</span>
+                            <span class="skill-tag">Optimization</span>
+                            <span class="skill-tag">Marketing Automation</span>
+                            <span class="skill-tag">Digital Transaction Management</span>
+                            <span class="skill-tag">Intelligent Agreement Management</span>
+                        </div>
+                    </div>
+
+                    <!-- Microsoft 365 -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card">
+                        <div class="flex items-center mb-4">
+                            <svg class="text-blue-400 mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Microsoft 365</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">SharePoint</span>
+                            <span class="skill-tag">Teams</span>
+                            <span class="skill-tag">OneDrive</span>
+                            <span class="skill-tag">Exchange</span>
+                            <span class="skill-tag">Intune</span>
+                            <span class="skill-tag">Power Platform</span>
+                            <span class="skill-tag">Azure AD/Entra ID</span>
+                        </div>
+                    </div>
+
+                    <!-- AWS & DevOps -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card">
+                        <div class="flex items-center mb-4">
+                            <svg class="text-blue-400 mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3 class="text-xl font-semibold">AWS &amp; DevOps</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Lambda</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">EKS</span>
+                            <span class="skill-tag">CI/CD Pipelines</span>
+                            <span class="skill-tag">API Gateway</span>
+                            <span class="skill-tag">Cloud-Native Development</span>
+                        </div>
+                    </div>
+
+                    <!-- Networking & Security -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card">
+                        <div class="flex items-center mb-4">
+                            <svg class="text-blue-400 mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Networking &amp; Security</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Cisco</span>
+                            <span class="skill-tag">Ubiquiti</span>
+                            <span class="skill-tag">Sophos</span>
+                            <span class="skill-tag">SonicWall</span>
+                            <span class="skill-tag">VPNs</span>
+                            <span class="skill-tag">Zero Trust</span>
+                            <span class="skill-tag">Segmentation</span>
+                        </div>
+                    </div>
+
+                    <!-- Systems Administration -->
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card">
+                        <div class="flex items-center mb-4">
+                            <svg class="text-blue-400 mr-3 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Systems Administration</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Windows &amp; Linux</span>
+                            <span class="skill-tag">Active Directory</span>
+                            <span class="skill-tag">File Servers</span>
+                            <span class="skill-tag">Data Backup/Recovery</span>
+                            <span class="skill-tag">GPO</span>
+                            <span class="skill-tag">Troubleshooting</span>
+                            <span class="skill-tag">IP Telephony</span>
+                            <span class="skill-tag">Video Surveillance Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="certifications" class="py-20 px-4 sm:px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Education &amp; Certifications</h2>
+                <p class="text-slate-300 text-center max-w-2xl mx-auto mb-12">
+                    Industry-recognized credentials across security, Microsoft 365, Azure, networking and IT service management.
                 </p>
+
+                <!-- Education -->
+                <div class="edu-card max-w-3xl mx-auto mb-10">
+                    <div class="edu-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10 12 5 2 10l10 5 10-5z"></path>
+                            <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-gold mb-1">Education</p>
+                        <h3 class="text-xl font-semibold">Bachelor of Science (B.Sc.)</h3>
+                        <p class="text-slate-300">Covenant University</p>
+                    </div>
+                </div>
+
+                <!-- Highlights -->
+                <ul class="flex flex-wrap justify-center gap-3 mb-12" aria-label="Certification highlights">
+                    <li class="stat-chip"><strong>12</strong> certifications</li>
+                    <li class="stat-chip"><strong>AI</strong> apps &amp; agents on Azure</li>
+                    <li class="stat-chip"><strong>CISSP</strong> certified</li>
+                    <li class="stat-chip"><strong>Microsoft</strong> Certified Trainer</li>
+                    <li class="stat-chip"><strong>Cisco</strong> CCNA &amp; CCNP</li>
+                </ul>
+
+
+                <h3 class="cert-group">Security Leadership &amp; Operations</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">ISC2</span>
+                            <span class="flex gap-2"><span class="cert-level">Professional</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">CISSP: Certified Information Systems Security Professional</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Security architecture, risk management, identity and access, and security operations at an enterprise level.</p>
+                    </article>
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"><span class="cert-code">SC-200</span><span class="cert-level">Associate</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Security Operations Analyst</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Detects, investigates and responds to threats using Microsoft Sentinel and Microsoft Defender.</p>
+                    </article>
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"><span class="cert-code">AZ-500</span><span class="cert-level">Associate</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Azure Security Engineer</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Secures Azure identity, networking, compute, storage, data and security operations.</p>
+                    </article>
+                </div>
+
+                <h3 class="cert-group">Microsoft 365</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"><span class="cert-level">Expert</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Microsoft 365 Enterprise Administrator Expert</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Plans, deploys and runs Microsoft 365 tenants, including identity, security, compliance and core workloads.</p>
+                    </article>
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"><span class="cert-level">Associate</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Microsoft 365 Security Administrator</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Implements identity and access, threat protection and information protection across Microsoft 365.</p>
+                    </article>
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"><span class="cert-code">SC-401</span><span class="cert-level">Associate</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Administering Information Security in Microsoft 365</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Protects and governs data with Microsoft Purview: classification, data loss prevention and retention.</p>
+                    </article>
+                </div>
+
+                <h3 class="cert-group">AI &amp; Azure</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"><span class="cert-code">AI-103</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Developing AI Apps and Agents on Azure</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Builds generative AI apps and agents with Microsoft Foundry, including RAG, multi-agent orchestration, and model evaluation for quality and safety.</p>
+                    </article>
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Azure Administrator</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Manages Azure identities, governance, storage, compute and virtual networks.</p>
+                    </article>
+                </div>
+
+                <h3 class="cert-group">Networking</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Cisco</span>
+                            <span class="flex gap-2"><span class="cert-level">Professional</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">CCNP: Cisco Certified Network Professional</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Advanced enterprise routing, switching and network troubleshooting.</p>
+                    </article>
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Cisco</span>
+                            <span class="flex gap-2"><span class="cert-level">Associate</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">CCNA: Cisco Certified Network Associate</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Network fundamentals, IP connectivity, network services and security fundamentals.</p>
+                    </article>
+                </div>
+
+                <h3 class="cert-group">Service Management &amp; Training</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">ITIL</span>
+                            <span class="flex gap-2"><span class="cert-level">Expert</span></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">ITIL Expert</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Advanced IT service management across the full service lifecycle.</p>
+                    </article>
+                    <article class="cert-card">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="flex gap-2"></span>
+                        </div>
+                        <h4 class="text-lg font-semibold leading-snug mb-2">Microsoft Certified Trainer (MCT)</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Recognized by Microsoft to deliver official Microsoft technical training.</p>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 px-6 bg-slate-800/30">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold mb-12 text-center">My Skills</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Google Cloud Platform -->
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card card-blue">
-                    <div class="flex items-center mb-4">
-                        <svg class="text-blue-400 mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <h3 class="text-xl font-semibold">Google Cloud Platform</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag skill-tag-blue">Cloud Run</span>
-                        <span class="skill-tag skill-tag-blue">Cloud Functions</span>
-                        <span class="skill-tag skill-tag-blue">Pub/Sub</span>
-                        <span class="skill-tag skill-tag-blue">Cloud SQL</span>
-                        <span class="skill-tag skill-tag-blue">Cloud IAM</span>
-                        <span class="skill-tag skill-tag-blue">Terraform</span>
-                        <span class="skill-tag skill-tag-blue">Cloud Build</span>
-                    </div>
-                </div>
-
-                <!-- CRM -->
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card card-blue">
-                    <div class="flex items-center mb-4">
-                        <svg class="text-blue-400 mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <h3 class="text-xl font-semibold">CRM</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag skill-tag-blue">HubSpot & Salesforce administration</span>
-                        <span class="skill-tag skill-tag-blue">Optimization</span>
-                        <span class="skill-tag skill-tag-blue">Marketing Automation</span>
-			<span class="skill-tag skill-tag-blue">Digital Transaction Management</span>
-			 <span class="skill-tag skill-tag-blue">Intelligent Agreement Management</span>
-                    </div>
-                </div>
-
-                <!-- Microsoft 365 -->
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card card-blue">
-                    <div class="flex items-center mb-4">
-                        <svg class="text-blue-400 mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <h3 class="text-xl font-semibold">Microsoft 365</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag skill-tag-blue">SharePoint</span>
-                        <span class="skill-tag skill-tag-blue">Teams</span>
-                        <span class="skill-tag skill-tag-blue">OneDrive</span>
-                        <span class="skill-tag skill-tag-blue">Exchange</span>
-                        <span class="skill-tag skill-tag-blue">Intune</span>
-                        <span class="skill-tag skill-tag-blue">Power Platform</span>
-                        <span class="skill-tag skill-tag-blue">Azure AD/Entra ID</span>
-                    </div>
-                </div>
-
-                <!-- AWS & DevOps -->
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card card-blue">
-                    <div class="flex items-center mb-4">
-                        <svg class="text-blue-400 mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <h3 class="text-xl font-semibold">AWS & DevOps</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag skill-tag-blue">Lambda</span>
-                        <span class="skill-tag skill-tag-blue">Terraform</span>
-                        <span class="skill-tag skill-tag-blue">EKS</span>
-                        <span class="skill-tag skill-tag-blue">CI/CD Pipelines</span>
-                        <span class="skill-tag skill-tag-blue">API Gateway</span>
-                        <span class="skill-tag skill-tag-blue">Cloud-Native Development</span>
-                    </div>
-                </div>
-
-                <!-- Networking & Security -->
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card card-blue">
-                    <div class="flex items-center mb-4">
-                        <svg class="text-blue-400 mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <h3 class="text-xl font-semibold">Networking & Security</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag skill-tag-blue">Cisco</span>
-                        <span class="skill-tag skill-tag-blue">Ubiquiti</span>
-                        <span class="skill-tag skill-tag-blue">Sophos</span>
-                        <span class="skill-tag skill-tag-blue">SonicWall</span>
-                        <span class="skill-tag skill-tag-blue">VPNs</span>
-                        <span class="skill-tag skill-tag-blue">Zero Trust</span>
-                        <span class="skill-tag skill-tag-blue">Segmentation</span>
-                    </div>
-                </div>
-
-                <!-- Systems Administration -->
-                <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 card card-blue">
-                    <div class="flex items-center mb-4">
-                        <svg class="text-blue-400 mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <h3 class="text-xl font-semibold">Systems Administration</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag skill-tag-blue">Windows & Linux</span>
-                        <span class="skill-tag skill-tag-blue">Active Directory</span>
-                        <span class="skill-tag skill-tag-blue">File Servers</span>
-                        <span class="skill-tag skill-tag-blue">Data Backup/Recovery</span>
-                        <span class="skill-tag skill-tag-blue">GPO</span>
-                        <span class="skill-tag skill-tag-blue">Troubleshooting</span>
-                        <span class="skill-tag skill-tag-blue">IP Telephony</span>
-                        <span class="skill-tag skill-tag-blue">Video Surveillance Management</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer / Connect Section -->
-    <footer class="py-12 px-6 border-t border-slate-700 bg-slate-800/30">
-        <div id="connect" class="max-w-6xl mx-auto">
+    <footer id="connect" class="py-16 px-4 sm:px-6 border-t border-slate-700 bg-slate-800/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-slate-300 mb-6">Have a project, role or question in mind? Send me a message on LinkedIn.</p>
+                <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold inline-block px-8 py-3 rounded-lg font-semibold">
+                    Message Me on LinkedIn
+                </a>
+            </div>
+
             <!-- Social Links Section -->
             <div class="text-center mb-8">
-                <h3 class="text-xl font-semibold mb-6 text-slate-300">Connect With Me</h3>
                 <div class="flex justify-center items-center flex-wrap gap-6">
                     <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" 
-                       class="social-link group" aria-label="LinkedIn">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer"
+                       class="social-link" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
                     </a>
 
                     <!-- GitHub -->
-                    <a href="https://github.com/ashesule" target="_blank" rel="noopener noreferrer" 
-                       class="social-link group" aria-label="GitHub">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <a href="https://github.com/ashesule" target="_blank" rel="noopener noreferrer"
+                       class="social-link" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
                         </svg>
                     </a>
 
                     <!-- Medium -->
-                    <a href="https://medium.com/@ashesule" target="_blank" rel="noopener noreferrer" 
-                       class="social-link group" aria-label="Medium">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <a href="https://medium.com/@ashesule" target="_blank" rel="noopener noreferrer"
+                       class="social-link" aria-label="Medium">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
                         </svg>
                     </a>
 
                     <!-- Substack -->
-                    <a href="https://substack.com/@ashesule" target="_blank" rel="noopener noreferrer" 
-                       class="social-link group" aria-label="Substack">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <a href="https://substack.com/@ashesule" target="_blank" rel="noopener noreferrer"
+                       class="social-link" aria-label="Substack">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
                         </svg>
                     </a>
 
                     <!-- Pinterest -->
-                    <a href="https://www.pinterest.com/ashesule/" target="_blank" rel="noopener noreferrer" 
-                       class="social-link group" aria-label="Pinterest">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <a href="https://www.pinterest.com/ashesule/" target="_blank" rel="noopener noreferrer"
+                       class="social-link" aria-label="Pinterest">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
                         </svg>
                     </a>
 
                     <!-- Scribd -->
-                    <a href="https://www.scribd.com/user/914791801/Ashe-Sule" target="_blank" rel="noopener noreferrer" 
-                       class="social-link group" aria-label="Scribd">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <a href="https://www.scribd.com/user/914791801/Ashe-Sule" target="_blank" rel="noopener noreferrer"
+                       class="social-link" aria-label="Scribd">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 6.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5S9 8.828 9 8s.672-1.5 1.5-1.5zm3 11c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm-1.125-4.875c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2z"/>
                         </svg>
                     </a>
@@ -304,7 +465,7 @@
 
             <!-- Copyright -->
             <div class="text-center text-slate-400 pt-8 border-t border-slate-700">
-                <p>© 2026 Ashe Sule. All rights reserved.</p>
+                <p>&copy; 2026 Ashe Sule. All rights reserved.</p>
             </div>
         </div>
     </footer>
