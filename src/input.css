@@ -266,6 +266,56 @@
         border-color: rgba(212, 175, 55, 0.35);
     }
 
+    /* ---------- Projects ---------- */
+    .project-card {
+        @apply grid lg:grid-cols-2 gap-8 items-center p-5 sm:p-8 rounded-3xl border bg-slate-800/40 backdrop-blur;
+        border-color: rgba(212, 175, 55, 0.3);
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(30, 41, 59, 0.55) 40%, rgba(59, 130, 246, 0.08));
+    }
+
+    .project-shot {
+        @apply block overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60;
+        box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.8);
+        transition: transform 0.3s, border-color 0.3s;
+    }
+
+    a.project-shot:hover {
+        transform: translateY(-4px);
+        border-color: rgba(212, 175, 55, 0.5);
+    }
+
+    .project-shot img,
+    .project-hero-media img {
+        @apply block w-full h-auto;
+    }
+
+    .project-shot figcaption {
+        @apply text-sm text-slate-400 px-4 py-3 border-t border-white/5;
+    }
+
+    .project-hero-media img {
+        @apply rounded-2xl border border-white/10;
+        box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.85);
+    }
+
+    .project-points {
+        @apply space-y-2 text-slate-300;
+    }
+
+    .project-points li {
+        @apply relative pl-6;
+    }
+
+    .project-points li::before {
+        content: '';
+        @apply absolute left-0 top-2.5 w-2 h-2 rounded-full;
+        background: #d4af37;
+    }
+
+    .project-points strong {
+        @apply text-white font-semibold;
+    }
+
     /* ---------- Certifications ---------- */
     .edu-card {
         @apply flex items-center gap-5 p-6 rounded-2xl border text-left backdrop-blur;

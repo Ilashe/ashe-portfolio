@@ -6,4 +6,6 @@ Education: Bachelor of Science (B.Sc.), Covenant University.
 
 Certifications: CISSP; Microsoft 365 Enterprise Administrator Expert; Microsoft 365 Security Administrator Associate; SC-401 Administering Information Security in Microsoft 365; SC-200 Security Operations Analyst; AZ-500 Azure Security Engineer; AI-103 Developing AI Apps and Agents on Azure; Azure Administrator; Cisco CCNP; Cisco CCNA; ITIL Expert; Microsoft Certified Trainer (MCT).
 
+Projects: Spot the Phish, a security awareness training SaaS (daily phishing challenge, tap-the-red-flag mechanic, readiness score, certificates, Microsoft 365 sync): https://ashesule.com/projects/spot-the-phish/
+
 Website: https://ashesule.com/

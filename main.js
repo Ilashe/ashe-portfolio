@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Highlight the nav link for the section in view
     var links = document.querySelectorAll('.nav-link');
-    var sections = ['about', 'skills', 'certifications', 'connect']
+    var sections = ['about', 'skills', 'projects', 'certifications', 'connect']
         .map(function (id) { return document.getElementById(id); })
         .filter(Boolean);
     if ('IntersectionObserver' in window) {
