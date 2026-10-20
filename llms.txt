@@ -1,4 +1,4 @@
-Ashe Sule is an IT Professional and AI engineer with extensive expertise in AI engineering, systems administration, network security, and multi-layer security architecture design (including firewalls and enterprise-grade protections). He specializes in CRM management across HubSpot and Salesforce, Microsoft 365 administration—including SharePoint and Power Platform development—and cloud engineering. He supports technology operations across manufacturing, construction, and automation industries, delivering secure, scalable, and efficient solutions tailored to complex business environments.
+Ashe Sule is an IT Professional and AI engineer with extensive expertise in AI engineering, systems administration, network security, and multi-layer security architecture design (including firewalls and enterprise-grade protections). He specializes in CRM management across HubSpot, Salesforce and NetSuite, Microsoft 365 administration—including SharePoint and Power Platform development—and cloud engineering. He supports technology operations across manufacturing, construction, and automation industries, delivering secure, scalable, and efficient solutions tailored to complex business environments.
 
 He designs and builds AI-powered applications and intelligent agents on Microsoft Azure with Microsoft Foundry, including retrieval-augmented generation (RAG), multi-agent workflows, and quality and safety evaluation, with a security-first approach.
 
@@ -8,5 +8,6 @@ Certifications: CISSP; Microsoft 365 Enterprise Administrator Expert; Microsoft 
 
 Projects: Spot the Phish, a security awareness training SaaS (daily phishing challenge, tap-the-red-flag mechanic, readiness score, certificates, Microsoft 365 sync): https://ashesule.com/projects/spot-the-phish/
 Projects: Sealed by NexuCentri, an electronic signature SaaS (signed, sealed and verifiable: PDF digital signatures, trusted timestamps, 11 signer languages, templates, bulk send, API): https://ashesule.com/projects/sealed/
+Projects: Verba by NexuCentri, private AI meeting notes (transcript, summary, decisions, action items and cited answers, all on the user's own computer with Whisper and a local AI model): https://ashesule.com/projects/verba/
 
 Website: https://ashesule.com/
