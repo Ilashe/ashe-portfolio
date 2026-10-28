@@ -29,11 +29,13 @@
     <meta name="twitter:description" content="The 5-minute habit that teaches your team to spot the phish. Built by Ashe Sule.">
     <meta name="twitter:image" content="https://ashesule.com/images/projects/spot-the-phish/home.png">
 
+    <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body class="bg-ink text-white antialiased">
+    <div class="read-progress" aria-hidden="true"></div>
     <a href="#main" class="skip-link">Skip to content</a>
 
     <div class="bg-decor" aria-hidden="true">
@@ -47,6 +49,10 @@
             <div class="flex justify-between items-center gap-4">
                 <a href="/" class="brand">Ashe Sule<span class="text-gold">.</span></a>
                 <div class="flex items-center gap-2">
+                    <button type="button" class="icon-btn palette-trigger" data-palette-open aria-label="Search the site (Ctrl+K)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                        <kbd>Ctrl K</kbd>
+                    </button>
                     <a href="/#projects" class="nav-link">&larr; All projects</a>
                     <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta hidden sm:inline-block">Request a demo</a>
                 </div>
@@ -75,7 +81,7 @@
                     <li class="stat-chip"><strong>WCAG AA</strong> accessible</li>
                 </ul>
                 <figure class="project-hero-media reveal">
-                    <img src="/images/projects/spot-the-phish/demo.gif" width="1200" height="750" alt="Demo: a new employee accepts an invite, flags the red flags in a phishing email, reports it, sees their results; then the admin dashboard, quick search, team leaderboard and dark mode." decoding="async">
+                    <img class="vt-phish" src="/images/projects/spot-the-phish/demo.webp" width="1200" height="750" alt="Demo: a new employee accepts an invite, flags the red flags in a phishing email, reports it, sees their results; then the admin dashboard, quick search, team leaderboard and dark mode." decoding="async">
                     <figcaption class="text-sm text-slate-400 mt-3">Demo with a fictional company. Every person, company and domain is made up.</figcaption>
                 </figure>
             </div>
@@ -116,7 +122,7 @@
                     </ul>
                 </div>
                 <figure class="project-shot reveal w-full max-w-md mx-auto">
-                    <img src="/images/projects/spot-the-phish/feedback.png" width="820" height="1205" alt="Feedback after reporting a phishing email: You spotted 1 of 2 red flags, plus the missed Reply-To clue and an explanation." loading="lazy" decoding="async">
+                    <img src="/images/projects/spot-the-phish/feedback.webp" width="820" height="1205" alt="Feedback after reporting a phishing email: You spotted 1 of 2 red flags, plus the missed Reply-To clue and an explanation." loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -129,7 +135,7 @@
                     <h2 class="section-title">Built for both sides</h2>
                 </div>
                 <div class="grid md:grid-cols-2 gap-6 mb-12">
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">For staff</h3>
                         <ul class="project-points">
                             <li><strong>Daily challenge:</strong> 10 new emails a day, one scored try, fair team leaderboards</li>
@@ -139,7 +145,7 @@
                             <li><strong>No passwords:</strong> sign in with an email link, Microsoft or Google</li>
                         </ul>
                     </div>
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">For admins</h3>
                         <ul class="project-points">
                             <li><strong>Readiness score</strong> (accuracy + weekly participation) with next best actions</li>
@@ -153,30 +159,30 @@
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/spot-the-phish/play.png" width="1200" height="750" alt="Learner home with XP level, streak, assigned training and the daily challenge." loading="lazy" decoding="async">
+                        <img src="/images/projects/spot-the-phish/play.webp" width="1200" height="750" alt="Learner home with XP level, streak, assigned training and the daily challenge." loading="lazy" decoding="async">
                         <figcaption>Learner home: level, streak, assigned training and today&apos;s challenge</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/spot-the-phish/results.png" width="1200" height="750" alt="Results after a daily challenge: 7 of 10 correct, XP earned and red flags spotted." loading="lazy" decoding="async">
+                        <img src="/images/projects/spot-the-phish/results.webp" width="1200" height="750" alt="Results after a daily challenge: 7 of 10 correct, XP earned and red flags spotted." loading="lazy" decoding="async">
                         <figcaption>Results: score, XP and red flags spotted</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/spot-the-phish/admin-dark.png" width="1200" height="750" alt="Admin overview in dark mode with the readiness score and next best actions." loading="lazy" decoding="async">
+                        <img src="/images/projects/spot-the-phish/admin-dark.webp" width="1200" height="750" alt="Admin overview in dark mode with the readiness score and next best actions." loading="lazy" decoding="async">
                         <figcaption>Admin overview (dark mode): readiness and next best actions</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/spot-the-phish/leaderboard.png" width="1200" height="750" alt="Team leaderboard with a top-three podium." loading="lazy" decoding="async">
+                        <img src="/images/projects/spot-the-phish/leaderboard.webp" width="1200" height="750" alt="Team leaderboard with a top-three podium." loading="lazy" decoding="async">
                         <figcaption>Team leaderboard</figcaption>
                     </figure>
                 </div>
 
                 <div class="grid grid-cols-2 gap-6 max-w-xl mx-auto mt-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/spot-the-phish/mobile-play.png" width="780" height="1688" alt="Phone: learner home." loading="lazy" decoding="async">
+                        <img src="/images/projects/spot-the-phish/mobile-play.webp" width="780" height="1688" alt="Phone: learner home." loading="lazy" decoding="async">
                         <figcaption>Phone: home</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/spot-the-phish/mobile-phone-view.png" width="780" height="1688" alt="Phone: training email in phone view, sender address hidden until tapped." loading="lazy" decoding="async">
+                        <img src="/images/projects/spot-the-phish/mobile-phone-view.webp" width="780" height="1688" alt="Phone: training email in phone view, sender address hidden until tapped." loading="lazy" decoding="async">
                         <figcaption>Phone: focus mode</figcaption>
                     </figure>
                 </div>

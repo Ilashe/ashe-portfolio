@@ -29,11 +29,13 @@
     <meta name="twitter:description" content="Smarter cloud spending. Better business decisions. See, explain and reduce AWS and Azure spend. Built by Ashe Sule.">
     <meta name="twitter:image" content="https://ashesule.com/images/projects/cloudspend-iq/explorer.png">
 
+    <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body class="bg-ink text-white antialiased">
+    <div class="read-progress" aria-hidden="true"></div>
     <a href="#main" class="skip-link">Skip to content</a>
 
     <div class="bg-decor" aria-hidden="true">
@@ -47,6 +49,10 @@
             <div class="flex justify-between items-center gap-4">
                 <a href="/" class="brand">Ashe Sule<span class="text-gold">.</span></a>
                 <div class="flex items-center gap-2">
+                    <button type="button" class="icon-btn palette-trigger" data-palette-open aria-label="Search the site (Ctrl+K)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                        <kbd>Ctrl K</kbd>
+                    </button>
                     <a href="/#projects" class="nav-link">&larr; All projects</a>
                     <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta hidden sm:inline-block">Request a demo</a>
                 </div>
@@ -77,7 +83,7 @@
                     <li class="stat-chip"><strong>346</strong> automated tests</li>
                 </ul>
                 <figure class="project-hero-media reveal">
-                    <img src="/images/projects/cloudspend-iq/explorer.png" width="1200" height="750" alt="The Cost Explorer: 90 days of daily spend by service across AWS and Azure as stacked bars, with a breakdown table showing cost, share and change." decoding="async">
+                    <img class="vt-cloudspend" src="/images/projects/cloudspend-iq/explorer.webp" width="1200" height="750" alt="The Cost Explorer: 90 days of daily spend by service across AWS and Azure as stacked bars, with a breakdown table showing cost, share and change." decoding="async">
                     <figcaption class="text-sm text-slate-400 mt-3">Demo with the fictional Northstar Digital Group. Every company, account and figure is made up.</figcaption>
                 </figure>
             </div>
@@ -119,7 +125,7 @@
                     </ul>
                 </div>
                 <figure class="project-shot reveal">
-                    <img src="/images/projects/cloudspend-iq/forecasting.png" width="1200" height="750" alt="Forecasting page: month-end forecast with three methods to choose from, the most accurate one marked, and a chart of spend through the month against the budget line." loading="lazy" decoding="async">
+                    <img src="/images/projects/cloudspend-iq/forecasting.webp" width="1200" height="750" alt="Forecasting page: month-end forecast with three methods to choose from, the most accurate one marked, and a chart of spend through the month against the budget line." loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -132,7 +138,7 @@
                     <h2 class="section-title">From billing export to decisions</h2>
                 </div>
                 <div class="grid md:grid-cols-2 gap-6 mb-12">
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">See and explain</h3>
                         <ul class="project-points">
                             <li><strong>Import</strong> AWS CUR 2.0, Azure cost details and FOCUS 1.2 files</li>
@@ -141,7 +147,7 @@
                             <li><strong>Reports</strong> as PDF and CSV, plus an optional AI Analyst that answers from the app&apos;s own data</li>
                         </ul>
                     </div>
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">Act and save</h3>
                         <ul class="project-points">
                             <li><strong>Budgets</strong> (monthly, quarterly or annual) with forecast alerts</li>
@@ -154,26 +160,26 @@
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/cloudspend-iq/anomalies.png" width="1200" height="750" alt="Anomalies page: three open events with actual, expected and excess spend, severity, status and owner." loading="lazy" decoding="async">
+                        <img src="/images/projects/cloudspend-iq/anomalies.webp" width="1200" height="750" alt="Anomalies page: three open events with actual, expected and excess spend, severity, status and owner." loading="lazy" decoding="async">
                         <figcaption>Anomalies worked through to resolved</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/cloudspend-iq/optimization.png" width="1200" height="750" alt="Optimization page: estimated savings of about $25,818 a month, $2,447 a month verified, and a list of recommendations with priority and status." loading="lazy" decoding="async">
+                        <img src="/images/projects/cloudspend-iq/optimization.webp" width="1200" height="750" alt="Optimization page: estimated savings of about $25,818 a month, $2,447 a month verified, and a list of recommendations with priority and status." loading="lazy" decoding="async">
                         <figcaption>Savings from estimate to verified</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/cloudspend-iq/overview-light.png" width="1200" height="750" alt="The executive overview in light mode: month-to-date spend, previous period, forecast, budget, AWS and Azure spend." loading="lazy" decoding="async">
+                        <img src="/images/projects/cloudspend-iq/overview-light.webp" width="1200" height="750" alt="The executive overview in light mode: month-to-date spend, previous period, forecast, budget, AWS and Azure spend." loading="lazy" decoding="async">
                         <figcaption>Executive overview, light mode</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/cloudspend-iq/trend.png" width="1200" height="750" alt="Daily spending trend for AWS and Azure over 90 days, and the monthly trend by cloud." loading="lazy" decoding="async">
+                        <img src="/images/projects/cloudspend-iq/trend.webp" width="1200" height="750" alt="Daily spending trend for AWS and Azure over 90 days, and the monthly trend by cloud." loading="lazy" decoding="async">
                         <figcaption>AWS and Azure trends side by side</figcaption>
                     </figure>
                 </div>
 
                 <div class="max-w-xs mx-auto mt-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/cloudspend-iq/phone.png" width="780" height="1688" alt="CloudSpend IQ on a phone: the executive overview with spend, forecast and budget tiles." loading="lazy" decoding="async">
+                        <img src="/images/projects/cloudspend-iq/phone.webp" width="780" height="1688" alt="CloudSpend IQ on a phone: the executive overview with spend, forecast and budget tiles." loading="lazy" decoding="async">
                         <figcaption>On a phone</figcaption>
                     </figure>
                 </div>

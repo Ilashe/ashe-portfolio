@@ -29,11 +29,13 @@
     <meta name="twitter:description" content="Every meeting, captured. Transcript, summary and action items, written on your own computer. Built by Ashe Sule.">
     <meta name="twitter:image" content="https://ashesule.com/images/projects/verba/meeting.png">
 
+    <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body class="bg-ink text-white antialiased">
+    <div class="read-progress" aria-hidden="true"></div>
     <a href="#main" class="skip-link">Skip to content</a>
 
     <div class="bg-decor" aria-hidden="true">
@@ -47,6 +49,10 @@
             <div class="flex justify-between items-center gap-4">
                 <a href="/" class="brand">Ashe Sule<span class="text-gold">.</span></a>
                 <div class="flex items-center gap-2">
+                    <button type="button" class="icon-btn palette-trigger" data-palette-open aria-label="Search the site (Ctrl+K)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                        <kbd>Ctrl K</kbd>
+                    </button>
                     <a href="/#projects" class="nav-link">&larr; All projects</a>
                     <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta hidden sm:inline-block">Request a demo</a>
                 </div>
@@ -77,7 +83,7 @@
                     <li class="stat-chip"><strong>55</strong> automated tests</li>
                 </ul>
                 <figure class="project-hero-media reveal">
-                    <img src="/images/projects/verba/meeting.png" width="1200" height="750" alt="A meeting in Verba: the summary, action items for Sam and Priya with due dates, the decisions, and the transcript with timestamps." decoding="async">
+                    <img class="vt-verba" src="/images/projects/verba/meeting.webp" width="1200" height="750" alt="A meeting in Verba: the summary, action items for Sam and Priya with due dates, the decisions, and the transcript with timestamps." decoding="async">
                     <figcaption class="text-sm text-slate-400 mt-3">Demo with a fictional meeting. Every person and company is made up. The notes were written by a local AI model.</figcaption>
                 </figure>
             </div>
@@ -119,7 +125,7 @@
                     </ul>
                 </div>
                 <figure class="project-shot reveal">
-                    <img src="/images/projects/verba/ask.png" width="1200" height="750" alt="Ask about this meeting: the answer to when the portal goes live, with three clickable timestamps, next to the transcript." loading="lazy" decoding="async">
+                    <img src="/images/projects/verba/ask.webp" width="1200" height="750" alt="Ask about this meeting: the answer to when the portal goes live, with three clickable timestamps, next to the transcript." loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -132,7 +138,7 @@
                     <h2 class="section-title">From recording to action items</h2>
                 </div>
                 <div class="grid md:grid-cols-2 gap-6 mb-12">
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">Capture and transcribe</h3>
                         <ul class="project-points">
                             <li><strong>Record</strong> your microphone, optionally mixed with a browser tab for online meetings</li>
@@ -141,7 +147,7 @@
                             <li><strong>Three accuracy levels</strong>; the transcript appears line by line as it listens</li>
                         </ul>
                     </div>
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">Notes you can act on</h3>
                         <ul class="project-points">
                             <li><strong>Summary, key points, decisions</strong> and open questions</li>
@@ -154,18 +160,18 @@
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/verba/search.png" width="1200" height="750" alt="Verba home page: upload or record a meeting, and a search across every meeting showing the exact moment password resets were mentioned." loading="lazy" decoding="async">
+                        <img src="/images/projects/verba/search.webp" width="1200" height="750" alt="Verba home page: upload or record a meeting, and a search across every meeting showing the exact moment password resets were mentioned." loading="lazy" decoding="async">
                         <figcaption>Search everything that was said</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/verba/meeting-light.png" width="1200" height="750" alt="The meeting page in light mode: summary, action items, decisions and transcript with the audio player." loading="lazy" decoding="async">
+                        <img src="/images/projects/verba/meeting-light.webp" width="1200" height="750" alt="The meeting page in light mode: summary, action items, decisions and transcript with the audio player." loading="lazy" decoding="async">
                         <figcaption>Light mode</figcaption>
                     </figure>
                 </div>
 
                 <div class="max-w-xs mx-auto mt-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/verba/phone.png" width="780" height="1688" alt="Verba on a phone: the meeting summary, action items with owners and due dates, and decisions." loading="lazy" decoding="async">
+                        <img src="/images/projects/verba/phone.webp" width="780" height="1688" alt="Verba on a phone: the meeting summary, action items with owners and due dates, and decisions." loading="lazy" decoding="async">
                         <figcaption>On a phone</figcaption>
                     </figure>
                 </div>

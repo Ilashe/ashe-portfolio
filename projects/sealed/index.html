@@ -29,11 +29,13 @@
     <meta name="twitter:description" content="Signed, sealed and verifiable. Built by Ashe Sule.">
     <meta name="twitter:image" content="https://ashesule.com/images/projects/sealed/home.png">
 
+    <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body class="bg-ink text-white antialiased">
+    <div class="read-progress" aria-hidden="true"></div>
     <a href="#main" class="skip-link">Skip to content</a>
 
     <div class="bg-decor" aria-hidden="true">
@@ -47,6 +49,10 @@
             <div class="flex justify-between items-center gap-4">
                 <a href="/" class="brand">Ashe Sule<span class="text-gold">.</span></a>
                 <div class="flex items-center gap-2">
+                    <button type="button" class="icon-btn palette-trigger" data-palette-open aria-label="Search the site (Ctrl+K)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                        <kbd>Ctrl K</kbd>
+                    </button>
                     <a href="/#projects" class="nav-link">&larr; All projects</a>
                     <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta hidden sm:inline-block">Request a demo</a>
                 </div>
@@ -77,7 +83,7 @@
                     <li class="stat-chip"><strong>WCAG AA</strong> accessible</li>
                 </ul>
                 <figure class="project-hero-media reveal">
-                    <img src="/images/projects/sealed/demo.gif" width="1200" height="750" alt="Demo: a company uploads an agreement, adds a signer and an approver, places fields and sends it; the signer draws their signature, the approver approves, the document is sealed, and the sealed copy is verified as genuine." decoding="async">
+                    <img class="vt-sealed" src="/images/projects/sealed/demo.webp" width="1200" height="750" alt="Demo: a company uploads an agreement, adds a signer and an approver, places fields and sends it; the signer draws their signature, the approver approves, the document is sealed, and the sealed copy is verified as genuine." decoding="async">
                     <figcaption class="text-sm text-slate-400 mt-3">Demo with a fictional company. Every person, company and domain is made up.</figcaption>
                 </figure>
             </div>
@@ -119,7 +125,7 @@
                     </ul>
                 </div>
                 <figure class="project-shot reveal w-full max-w-md mx-auto">
-                    <img src="/images/projects/sealed/certificate.png" width="953" height="1051" alt="The signing certificate at the end of a sealed PDF: company logo, the Sealed wax seal, document details, signers with their identity check and time zone, and the drawn signature." loading="lazy" decoding="async">
+                    <img src="/images/projects/sealed/certificate.webp" width="953" height="1051" alt="The signing certificate at the end of a sealed PDF: company logo, the Sealed wax seal, document details, signers with their identity check and time zone, and the drawn signature." loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -132,7 +138,7 @@
                     <h2 class="section-title">Built for senders and signers</h2>
                 </div>
                 <div class="grid md:grid-cols-2 gap-6 mb-12">
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">For the people signing</h3>
                         <ul class="project-points">
                             <li><strong>No account:</strong> a private link, a clear consent step, sign on any phone</li>
@@ -142,7 +148,7 @@
                             <li>Decline with a reason, or pass it to the right colleague</li>
                         </ul>
                     </div>
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <h3 class="text-xl font-semibold mb-4">For the business sending</h3>
                         <ul class="project-points">
                             <li><strong>Upload a PDF, Word file or photo</strong>; drag fields into place</li>
@@ -156,30 +162,30 @@
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/sealed/editor.png" width="1200" height="750" alt="The editor: people with roles on the right, signature, date and name fields placed on the page." loading="lazy" decoding="async">
+                        <img src="/images/projects/sealed/editor.webp" width="1200" height="750" alt="The editor: people with roles on the right, signature, date and name fields placed on the page." loading="lazy" decoding="async">
                         <figcaption>Editor: people, roles and fields</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/sealed/status.png" width="1200" height="750" alt="A completed document: people who signed and approved, the proof panel with fingerprints, digital signature and trusted timestamp, and the signing trail." loading="lazy" decoding="async">
+                        <img src="/images/projects/sealed/status.webp" width="1200" height="750" alt="A completed document: people who signed and approved, the proof panel with fingerprints, digital signature and trusted timestamp, and the signing trail." loading="lazy" decoding="async">
                         <figcaption>Completed: proof and signing trail</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/sealed/templates.png" width="1200" height="750" alt="Templates page with a saved services agreement, its roles, and Use and Bulk send buttons." loading="lazy" decoding="async">
+                        <img src="/images/projects/sealed/templates.webp" width="1200" height="750" alt="Templates page with a saved services agreement, its roles, and Use and Bulk send buttons." loading="lazy" decoding="async">
                         <figcaption>Templates and bulk send</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/sealed/verify.png" width="1200" height="750" alt="Verify page confirming a sealed PDF is genuine and unchanged, with an independent timestamp." loading="lazy" decoding="async">
+                        <img src="/images/projects/sealed/verify.webp" width="1200" height="750" alt="Verify page confirming a sealed PDF is genuine and unchanged, with an independent timestamp." loading="lazy" decoding="async">
                         <figcaption>Verify: genuine and unchanged</figcaption>
                     </figure>
                 </div>
 
                 <div class="grid grid-cols-2 gap-6 max-w-xl mx-auto mt-6">
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/sealed/phone-code.png" width="780" height="1688" alt="Phone, in French: the signer is asked for the access code before anything about the document is shown." loading="lazy" decoding="async">
+                        <img src="/images/projects/sealed/phone-code.webp" width="780" height="1688" alt="Phone, in French: the signer is asked for the access code before anything about the document is shown." loading="lazy" decoding="async">
                         <figcaption>Phone: access code (French)</figcaption>
                     </figure>
                     <figure class="project-shot reveal">
-                        <img src="/images/projects/sealed/phone-sign.png" width="780" height="1688" alt="Phone, in French: the signing page with consent, the document and progress bar." loading="lazy" decoding="async">
+                        <img src="/images/projects/sealed/phone-sign.webp" width="780" height="1688" alt="Phone, in French: the signing page with consent, the document and progress bar." loading="lazy" decoding="async">
                         <figcaption>Phone: signing</figcaption>
                     </figure>
                 </div>

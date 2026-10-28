@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashe Sule - IT Professional</title>
+    <title>Ashe Sule - IT Manager & AI Engineer</title>
     <meta name="description" content="IT Professional | AI engineering, systems admin, network security, CRM (HubSpot/Salesforce/NetSuite), M365, cloud engineering | CISSP, Microsoft MCT.">
     <meta name="author" content="Ashe Sule">
     <meta name="theme-color" content="#0b1120">
@@ -71,6 +71,7 @@
     </script>
 
     <!-- Built from src/input.css with `npm run build:css` -->
+    <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js"></script>
     <!-- Vercel Web Analytics (enable under Project > Analytics in the Vercel dashboard) -->
@@ -92,16 +93,36 @@
             <div class="flex justify-between items-center gap-4">
                 <a href="#home" class="brand">Ashe Sule<span class="text-gold">.</span></a>
                 <div class="hidden lg:flex items-center gap-2">
+                    <a href="#projects" class="nav-link">Projects</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#projects" class="nav-link">Projects</a>
                     <a href="#certifications" class="nav-link">Certifications</a>
+                    <button type="button" class="icon-btn palette-trigger" data-palette-open aria-label="Search the site (Ctrl+K)">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                        <kbd>Ctrl K</kbd>
+                    </button>
                     <a href="#connect" class="nav-link nav-cta">Contact</a>
                 </div>
-                <a href="#connect" class="lg:hidden btn-gold px-4 py-2 rounded-lg text-sm font-semibold">Contact</a>
+                <div class="flex lg:hidden items-center gap-2">
+                    <button type="button" class="icon-btn palette-trigger" data-palette-open aria-label="Search the site">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                    </button>
+                    <button type="button" class="icon-btn" popovertarget="mobile-menu" aria-label="Open menu">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
+
+    <!-- Phone menu (native popover: works without JavaScript) -->
+    <div id="mobile-menu" class="mobile-menu" popover aria-label="Menu">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="mobile-cta">Message me on LinkedIn</a>
+    </div>
 
     <main id="main">
         <!-- Hero Section -->
@@ -109,22 +130,40 @@
             <div class="w-full min-w-0 max-w-5xl text-center">
                 <p class="eyebrow-pill reveal">
                     <span class="pulse-dot" aria-hidden="true"></span>
-                    AI Engineering &middot; Security &middot; Microsoft 365 &middot; Cloud
+                    IT Manager &middot; AI Engineer &middot; CISSP
                 </p>
-                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-[1.05] break-words reveal">
-                    Information <span class="text-gradient">Technology</span> Professional
+                <h1 class="text-[2rem] min-[400px]:text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6 leading-[1.05] break-words reveal">
+                    I build
+                    <span class="sr-only">secure AI products, cloud tools, security training and IT that just works.</span>
+                    <span class="typer-line" aria-hidden="true"><span class="typer" data-words="secure AI products|cloud cost tools|security training|IT that just works">secure AI products</span></span>
                 </h1>
                 <p class="text-lg sm:text-xl md:text-2xl mb-10 text-slate-300 max-w-3xl mx-auto reveal">
-                    Transforming teams and technology to deliver exceptional results
+                    IT professional and AI engineer. I design, build and test real products end to end, with security built in from day one.
                 </p>
-                <div class="flex justify-center flex-wrap gap-4 mb-14 reveal">
-                    <a href="#about" class="btn-gold px-8 py-3 rounded-lg font-semibold">
-                        Learn More
+                <div class="flex justify-center flex-wrap gap-4 mb-12 reveal">
+                    <a href="#projects" class="btn-gold px-8 py-3 rounded-lg font-semibold">
+                        See my work
                     </a>
-                    <a href="#connect" class="btn-gold-outline px-8 py-3 rounded-lg font-semibold">
-                        Get in Touch
+                    <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-8 py-3 rounded-lg font-semibold">
+                        Message me on LinkedIn
                     </a>
                 </div>
+
+                <!-- Proof in numbers (count up on scroll; the HTML holds the real values) -->
+                <dl class="hero-stats reveal">
+                    <div class="hero-stat">
+                        <dt class="hero-stat-label">Products built</dt>
+                        <dd class="hero-stat-value" data-count="4">4</dd>
+                    </div>
+                    <div class="hero-stat">
+                        <dt class="hero-stat-label">Automated tests</dt>
+                        <dd class="hero-stat-value" data-count="650" data-suffix="+">650+</dd>
+                    </div>
+                    <div class="hero-stat">
+                        <dt class="hero-stat-label">Certifications</dt>
+                        <dd class="hero-stat-value" data-count="12">12</dd>
+                    </div>
+                </dl>
 
                 <!-- Credential strip -->
                 <ul class="flex flex-wrap justify-center gap-3 reveal" aria-label="Key credentials">
@@ -136,11 +175,181 @@
                     <li class="cred-badge">MCT</li>
                 </ul>
 
-                <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+                <a href="#projects" class="scroll-cue" aria-label="Scroll to Projects">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 px-4 sm:px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="section-head reveal">
+                    <p class="section-eyebrow">Projects</p>
+                    <h2 class="section-title">Things I&apos;ve Built</h2>
+                    <p class="text-slate-300 max-w-2xl mx-auto mt-4">
+                        Products I design, build and test end to end. Demos use fictional companies and data.
+                    </p>
+                </div>
+
+                <article class="project-card spotlight reveal">
+                    <a href="/projects/spot-the-phish/" class="project-shot" aria-label="Spot the Phish: view the project">
+                        <img class="vt-phish" src="/images/projects/spot-the-phish/home.webp" width="1200" height="750" alt="Spot the Phish landing page: the 5-minute habit that teaches your team to spot the phish" loading="lazy" decoding="async">
+                    </a>
+                    <div class="project-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag skill-tag-gold">Security awareness SaaS</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Spot the Phish</h3>
+                        <p class="text-slate-300 mb-5">
+                            Phishing training your team actually finishes: a 5-minute daily challenge with realistic emails, instant lessons on every red flag,
+                            certificates and audit-ready reports. Built to compete with the big names in security awareness.
+                        </p>
+                        <ul class="project-points">
+                            <li><strong>Tap the red flag:</strong> people flag the exact sender, link or attachment that gave it away</li>
+                            <li><strong>Readiness score</strong> and next best actions for admins</li>
+                            <li><strong>Microsoft 365 &amp; Google</strong> sign-in and automatic staff sync</li>
+                            <li><strong>187 automated tests</strong>, accessible (WCAG AA), 0 known vulnerabilities</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <a href="/projects/spot-the-phish/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
+                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Spot the Phish mini-game (shown only when JavaScript runs) -->
+                <div id="phish-game" class="phish-game">
+                    <div class="phish-intro">
+                        <p class="section-eyebrow">Try it now</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Can you spot the phish?</h3>
+                        <p class="text-slate-300 mb-5">This practice email hides 5 red flags. Tap every part that looks wrong. It takes about 30 seconds.</p>
+                        <div class="phish-meter" aria-hidden="true"><span class="phish-meter-fill"></span></div>
+                        <p class="phish-score text-sm font-semibold text-white" aria-live="polite"></p>
+                        <p class="phish-hint" aria-live="polite"></p>
+                    </div>
+                    <div class="phish-email" role="group" aria-label="Practice email">
+                        <div class="phish-meta">
+                            <div class="phish-meta-row">
+                                <span class="phish-meta-label">From</span>
+                                <button type="button" class="phish-spot" aria-pressed="false" data-flag data-title="Lookalike sender" data-why="The address is coldrivex-support.co, not the real coldrivex.com.">IT Service Desk &lt;it-desk@coldrivex-support.co&gt;</button>
+                            </div>
+                            <div class="phish-meta-row">
+                                <span class="phish-meta-label">To</span>
+                                <button type="button" class="phish-spot">jordan.lee@coldrivex.com</button>
+                            </div>
+                            <div class="phish-meta-row">
+                                <span class="phish-meta-label">Subject</span>
+                                <button type="button" class="phish-spot font-semibold text-white" aria-pressed="false" data-flag data-title="Panic and a deadline" data-why="Urgency is there to rush you past your better judgment.">URGENT: Your mailbox will be deleted in 2 hours</button>
+                            </div>
+                        </div>
+                        <div class="phish-body">
+                            <p><button type="button" class="phish-spot" aria-pressed="false" data-flag data-title="Generic greeting" data-why="Your own IT team knows your name.">Dear valued user,</button></p>
+                            <p><button type="button" class="phish-spot">We are upgrading our email servers this week. To keep your messages and contacts, please confirm your account using the button below.</button></p>
+                            <p><button type="button" class="phish-spot phish-button" aria-pressed="false" data-flag data-title="Password request" data-why="The button opens coldrivex.account-verify.net, a fake sign-in page. IT will never ask for your password by email.">Keep my mailbox</button></p>
+                            <p><button type="button" class="phish-spot phish-attachment" aria-pressed="false" data-flag data-title="Disguised attachment" data-why="&ldquo;.pdf.exe&rdquo; is a program pretending to be a PDF.">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.6l-9.2 9.2a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
+                                Mailbox_Policy.pdf.exe
+                            </button></p>
+                            <p><button type="button" class="phish-spot text-slate-400">Thank you,<br>Coldrivex IT Team</button></p>
+                        </div>
+                    </div>
+                    <div class="phish-side">
+                        <ul class="phish-found" aria-label="Red flags found"></ul>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <button type="button" class="btn-gold-outline px-5 py-2.5 rounded-lg font-semibold" data-phish-reveal>Show me the answers</button>
+                            <div class="phish-finish flex flex-wrap gap-3" hidden>
+                                <a href="/projects/spot-the-phish/" class="btn-gold px-5 py-2.5 rounded-lg font-semibold">See the full product</a>
+                                <button type="button" class="btn-gold-outline px-5 py-2.5 rounded-lg font-semibold" data-phish-reset>Play again</button>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-4">Practice email for a fictional company. Nothing here is a real link.</p>
+                    </div>
+                </div>
+
+                <article class="project-card spotlight reveal mt-8">
+                    <a href="/projects/sealed/" class="project-shot" aria-label="Sealed: view the project">
+                        <img class="vt-sealed" src="/images/projects/sealed/home.webp" width="1200" height="750" alt="Sealed landing page: Signed, sealed and verifiable" loading="lazy" decoding="async">
+                    </a>
+                    <div class="project-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag skill-tag-gold">Electronic signatures SaaS</span>
+                            <span class="skill-tag">by NexuCentri</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Sealed</h3>
+                        <p class="text-slate-300 mb-5">
+                            Signed, sealed and verifiable. Electronic signatures for businesses, where every finished document carries its own proof: a digital
+                            signature, a trusted timestamp and a certificate anyone can check.
+                        </p>
+                        <ul class="project-points">
+                            <li><strong>PDF digital signature</strong> and independent timestamp on every sealed document</li>
+                            <li><strong>11 languages</strong>, access and SMS codes, sign on any phone</li>
+                            <li><strong>Templates, bulk send, API</strong> and each company&apos;s own branding</li>
+                            <li><strong>62 automated tests</strong>, accessible (WCAG AA), 0 known vulnerabilities</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <a href="/projects/sealed/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
+                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card spotlight reveal mt-8">
+                    <a href="/projects/verba/" class="project-shot" aria-label="Verba: view the project">
+                        <img class="vt-verba" src="/images/projects/verba/meeting.webp" width="1200" height="750" alt="Verba meeting page: summary, action items with owners and due dates, decisions, and the transcript" loading="lazy" decoding="async">
+                    </a>
+                    <div class="project-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag skill-tag-gold">AI meeting notes</span>
+                            <span class="skill-tag">by NexuCentri</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Verba</h3>
+                        <p class="text-slate-300 mb-5">
+                            Every meeting, captured. Record or upload a meeting and get the transcript, summary, decisions and action items, written by AI on
+                            your own computer. Recordings never leave it, and there is nothing to pay per minute.
+                        </p>
+                        <ul class="project-points">
+                            <li><strong>Action items</strong> with owners and due dates, plus decisions and open questions</li>
+                            <li><strong>Ask questions</strong> and get answers that point to the exact moment</li>
+                            <li><strong>About 100 languages</strong>, search across every meeting, Word export</li>
+                            <li><strong>55 automated tests</strong>, accessible, runs fully offline</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <a href="/projects/verba/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
+                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card spotlight reveal mt-8">
+                    <a href="/projects/cloudspend-iq/" class="project-shot" aria-label="CloudSpend IQ: view the project">
+                        <img class="vt-cloudspend" src="/images/projects/cloudspend-iq/explorer.webp" width="1200" height="750" alt="CloudSpend IQ Cost Explorer: 90 days of daily spend by service across AWS and Azure, with a breakdown table" loading="lazy" decoding="async">
+                    </a>
+                    <div class="project-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag skill-tag-gold">Multi-cloud FinOps</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">CloudSpend IQ</h3>
+                        <p class="text-slate-300 mb-5">
+                            Smarter cloud spending, better business decisions. One place to see, explain and reduce AWS and Microsoft Azure spend, from
+                            billing export to budgets, anomaly alerts, forecasts and savings you can prove.
+                        </p>
+                        <ul class="project-points">
+                            <li><strong>Cost Explorer</strong> across both clouds, sliced 11 ways, with CSV export</li>
+                            <li><strong>Budgets, anomalies and forecasts</strong> that are backtested and explainable</li>
+                            <li><strong>Verified savings</strong> measured from billing data, plus PDF and CSV reports</li>
+                            <li><strong>346 automated tests</strong>, accessible (WCAG 2.2 AA), 0 known vulnerabilities</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <a href="/projects/cloudspend-iq/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
+                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <p class="text-center text-slate-400 text-sm mt-8 reveal">More projects are on the way.</p>
             </div>
         </section>
 
@@ -153,14 +362,22 @@
                 </div>
                 <div class="grid lg:grid-cols-3 gap-8 items-start">
                     <div class="lg:col-span-2 space-y-6 text-slate-300 leading-relaxed text-lg reveal">
-                        <p>
-                            IT Professional with comprehensive expertise in AI engineering, systems administration, networking security and administration (including firewalls and multi-layer security architectures), CRM management (HubSpot, Salesforce and NetSuite), Microsoft 365 administration (SharePoint and Power Platform development), and cloud engineering. Experienced in supporting technology operations across the manufacturing, construction, and automation sectors, delivering secure, scalable, and efficiency-driven solutions tailored to complex operational environments.
+                        <p class="text-xl text-white">
+                            I&apos;m an IT professional and AI engineer who likes technology that is secure, simple and actually used.
                         </p>
                         <p>
-                            As an AI engineer, designs and builds AI-powered applications and intelligent agents on Microsoft Azure with Microsoft Foundry: from retrieval-augmented generation (RAG) that puts company knowledge to work, to multi-agent workflows that automate everyday business processes. Brings a security-first mindset to every AI solution, with data governance, responsible AI and quality and safety evaluation built in from day one.
+                            Day to day, I run technology for businesses in manufacturing, construction and automation: networks and firewalls, Microsoft 365
+                            (including SharePoint and Power Platform), CRM platforms like HubSpot, Salesforce and NetSuite, and the cloud. I lead cross-functional
+                            teams and automate the busywork so people can focus on what matters.
                         </p>
                         <p>
-                            CISSP certified, ITIL Expert, Cisco CCNA and CCNP, and holder of multiple Microsoft certifications across Microsoft 365, Azure security and AI. Also certified in HubSpot and Salesforce, and recognized as a Microsoft Certified Trainer (MCT). Demonstrates a proven ability to optimize CRM platforms, automate workflows, streamline processes, and improve business performance. Highly skilled in managing enterprise infrastructure, securing network environments, supporting cloud-based systems, and leading cross-functional teams to deliver reliable, data-driven, and strategically aligned technology outcomes.
+                            I also design and build AI apps and agents on Microsoft Azure with Microsoft Foundry, from retrieval-augmented generation (RAG) that
+                            puts company knowledge to work, to multi-agent workflows for everyday processes. Security, data governance and responsible AI come
+                            first, not last.
+                        </p>
+                        <p>
+                            I&apos;m CISSP certified, an ITIL Expert, Cisco CCNA and CCNP, and hold Microsoft certifications across Microsoft 365, Azure security
+                            and AI, plus HubSpot and Salesforce. As a Microsoft Certified Trainer, I also love helping teams get more from the tools they already have.
                         </p>
                     </div>
 
@@ -173,8 +390,8 @@
                                 <dd class="stat-value">12</dd>
                             </div>
                             <div class="stat">
-                                <dt class="stat-label">Skill areas</dt>
-                                <dd class="stat-value">7</dd>
+                                <dt class="stat-label">Products built</dt>
+                                <dd class="stat-value">4</dd>
                             </div>
                             <div class="stat col-span-2">
                                 <dt class="stat-label">Security</dt>
@@ -203,7 +420,7 @@
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- AI Engineering (featured) -->
-                    <div class="skill-card skill-card-featured md:col-span-2 lg:col-span-3 reveal">
+                    <div class="skill-card skill-card-featured spotlight md:col-span-2 lg:col-span-3 reveal">
                         <div class="flex flex-col lg:flex-row lg:items-center gap-6">
                             <div class="lg:w-1/3">
                                 <div class="flex items-center gap-4 mb-3">
@@ -227,7 +444,7 @@
                     </div>
 
                     <!-- Microsoft 365 -->
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <div class="flex items-center gap-4 mb-5">
                             <span class="icon-tile icon-blue" aria-hidden="true">
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
@@ -246,7 +463,7 @@
                     </div>
 
                     <!-- Networking & Security -->
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <div class="flex items-center gap-4 mb-5">
                             <span class="icon-tile icon-rose" aria-hidden="true">
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -265,7 +482,7 @@
                     </div>
 
                     <!-- Systems Administration -->
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <div class="flex items-center gap-4 mb-5">
                             <span class="icon-tile icon-emerald" aria-hidden="true">
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8l3 2-3 2M12 12h4"/></svg>
@@ -285,7 +502,7 @@
                     </div>
 
                     <!-- Google Cloud Platform -->
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <div class="flex items-center gap-4 mb-5">
                             <span class="icon-tile icon-cyan" aria-hidden="true">
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H7a5 5 0 1 1 1.1-9.9A6 6 0 0 1 19.5 11 4 4 0 0 1 17.5 19z"/></svg>
@@ -304,7 +521,7 @@
                     </div>
 
                     <!-- AWS & DevOps -->
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <div class="flex items-center gap-4 mb-5">
                             <span class="icon-tile icon-amber" aria-hidden="true">
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/><path d="M8 12l2.5 2.5L16 9"/></svg>
@@ -322,7 +539,7 @@
                     </div>
 
                     <!-- CRM -->
-                    <div class="skill-card reveal">
+                    <div class="skill-card spotlight reveal">
                         <div class="flex items-center gap-4 mb-5">
                             <span class="icon-tile icon-violet" aria-hidden="true">
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
@@ -338,127 +555,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-24 px-4 sm:px-6">
-            <div class="max-w-6xl mx-auto">
-                <div class="section-head reveal">
-                    <p class="section-eyebrow">Projects</p>
-                    <h2 class="section-title">Things I&apos;ve Built</h2>
-                    <p class="text-slate-300 max-w-2xl mx-auto mt-4">
-                        Products I design, build and test end to end. Demos use fictional companies and data.
-                    </p>
-                </div>
-
-                <article class="project-card reveal">
-                    <a href="/projects/spot-the-phish/" class="project-shot" aria-label="Spot the Phish: view the project">
-                        <img src="/images/projects/spot-the-phish/home.png" width="1200" height="750" alt="Spot the Phish landing page: the 5-minute habit that teaches your team to spot the phish" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-body">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag skill-tag-gold">Security awareness SaaS</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Spot the Phish</h3>
-                        <p class="text-slate-300 mb-5">
-                            Phishing training your team actually finishes: a 5-minute daily challenge with realistic emails, instant lessons on every red flag,
-                            certificates and audit-ready reports. Built to compete with the big names in security awareness.
-                        </p>
-                        <ul class="project-points">
-                            <li><strong>Tap the red flag:</strong> people flag the exact sender, link or attachment that gave it away</li>
-                            <li><strong>Readiness score</strong> and next best actions for admins</li>
-                            <li><strong>Microsoft 365 &amp; Google</strong> sign-in and automatic staff sync</li>
-                            <li><strong>187 automated tests</strong>, accessible (WCAG AA), 0 known vulnerabilities</li>
-                        </ul>
-                        <div class="flex flex-wrap gap-3 mt-6">
-                            <a href="/projects/spot-the-phish/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
-                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal mt-8">
-                    <a href="/projects/sealed/" class="project-shot" aria-label="Sealed: view the project">
-                        <img src="/images/projects/sealed/home.png" width="1200" height="750" alt="Sealed landing page: Signed, sealed and verifiable" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-body">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag skill-tag-gold">Electronic signatures SaaS</span>
-                            <span class="skill-tag">by NexuCentri</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Sealed</h3>
-                        <p class="text-slate-300 mb-5">
-                            Signed, sealed and verifiable. Electronic signatures for businesses, where every finished document carries its own proof: a digital
-                            signature, a trusted timestamp and a certificate anyone can check.
-                        </p>
-                        <ul class="project-points">
-                            <li><strong>PDF digital signature</strong> and independent timestamp on every sealed document</li>
-                            <li><strong>11 languages</strong>, access and SMS codes, sign on any phone</li>
-                            <li><strong>Templates, bulk send, API</strong> and each company&apos;s own branding</li>
-                            <li><strong>62 automated tests</strong>, accessible (WCAG AA), 0 known vulnerabilities</li>
-                        </ul>
-                        <div class="flex flex-wrap gap-3 mt-6">
-                            <a href="/projects/sealed/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
-                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal mt-8">
-                    <a href="/projects/verba/" class="project-shot" aria-label="Verba: view the project">
-                        <img src="/images/projects/verba/meeting.png" width="1200" height="750" alt="Verba meeting page: summary, action items with owners and due dates, decisions, and the transcript" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-body">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag skill-tag-gold">AI meeting notes</span>
-                            <span class="skill-tag">by NexuCentri</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Verba</h3>
-                        <p class="text-slate-300 mb-5">
-                            Every meeting, captured. Record or upload a meeting and get the transcript, summary, decisions and action items, written by AI on
-                            your own computer. Recordings never leave it, and there is nothing to pay per minute.
-                        </p>
-                        <ul class="project-points">
-                            <li><strong>Action items</strong> with owners and due dates, plus decisions and open questions</li>
-                            <li><strong>Ask questions</strong> and get answers that point to the exact moment</li>
-                            <li><strong>About 100 languages</strong>, search across every meeting, Word export</li>
-                            <li><strong>55 automated tests</strong>, accessible, runs fully offline</li>
-                        </ul>
-                        <div class="flex flex-wrap gap-3 mt-6">
-                            <a href="/projects/verba/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
-                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card reveal mt-8">
-                    <a href="/projects/cloudspend-iq/" class="project-shot" aria-label="CloudSpend IQ: view the project">
-                        <img src="/images/projects/cloudspend-iq/explorer.png" width="1200" height="750" alt="CloudSpend IQ Cost Explorer: 90 days of daily spend by service across AWS and Azure, with a breakdown table" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-body">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag skill-tag-gold">Multi-cloud FinOps</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">CloudSpend IQ</h3>
-                        <p class="text-slate-300 mb-5">
-                            Smarter cloud spending, better business decisions. One place to see, explain and reduce AWS and Microsoft Azure spend, from
-                            billing export to budgets, anomaly alerts, forecasts and savings you can prove.
-                        </p>
-                        <ul class="project-points">
-                            <li><strong>Cost Explorer</strong> across both clouds, sliced 11 ways, with CSV export</li>
-                            <li><strong>Budgets, anomalies and forecasts</strong> that are backtested and explainable</li>
-                            <li><strong>Verified savings</strong> measured from billing data, plus PDF and CSV reports</li>
-                            <li><strong>346 automated tests</strong>, accessible (WCAG 2.2 AA), 0 known vulnerabilities</li>
-                        </ul>
-                        <div class="flex flex-wrap gap-3 mt-6">
-                            <a href="/projects/cloudspend-iq/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
-                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
-                        </div>
-                    </div>
-                </article>
-
-                <p class="text-center text-slate-400 text-sm mt-8 reveal">More projects are on the way.</p>
             </div>
         </section>
 
@@ -499,7 +595,7 @@
 
                 <h3 class="cert-group">Security Leadership &amp; Operations</h3>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">ISC2</span>
                             <span class="cert-pills"><span class="cert-level">Professional</span></span>
@@ -507,7 +603,7 @@
                         <h4 class="text-lg font-semibold leading-snug mb-2">CISSP: Certified Information Systems Security Professional</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">Security architecture, risk management, identity and access, and security operations at an enterprise level.</p>
                     </article>
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"><span class="cert-code">SC-200</span><span class="cert-level">Associate</span></span>
@@ -515,7 +611,7 @@
                         <h4 class="text-lg font-semibold leading-snug mb-2">Security Operations Analyst</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">Detects, investigates and responds to threats using Microsoft Sentinel and Microsoft Defender.</p>
                     </article>
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"><span class="cert-code">AZ-500</span><span class="cert-level">Associate</span></span>
@@ -527,7 +623,7 @@
 
                 <h3 class="cert-group">Microsoft 365</h3>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"><span class="cert-level">Expert</span></span>
@@ -535,7 +631,7 @@
                         <h4 class="text-lg font-semibold leading-snug mb-2">Microsoft 365 Enterprise Administrator Expert</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">Plans, deploys and runs Microsoft 365 tenants, including identity, security, compliance and core workloads.</p>
                     </article>
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"><span class="cert-level">Associate</span></span>
@@ -543,7 +639,7 @@
                         <h4 class="text-lg font-semibold leading-snug mb-2">Microsoft 365 Security Administrator</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">Implements identity and access, threat protection and information protection across Microsoft 365.</p>
                     </article>
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"><span class="cert-code">SC-401</span><span class="cert-level">Associate</span></span>
@@ -555,7 +651,7 @@
 
                 <h3 class="cert-group">AI &amp; Azure</h3>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"><span class="cert-code">AI-103</span></span>
@@ -563,7 +659,7 @@
                         <h4 class="text-lg font-semibold leading-snug mb-2">Developing AI Apps and Agents on Azure</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">Builds generative AI apps and agents with Microsoft Foundry, including RAG, multi-agent orchestration, and model evaluation for quality and safety.</p>
                     </article>
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"></span>
@@ -575,7 +671,7 @@
 
                 <h3 class="cert-group">Networking</h3>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Cisco</span>
                             <span class="cert-pills"><span class="cert-level">Professional</span></span>
@@ -583,7 +679,7 @@
                         <h4 class="text-lg font-semibold leading-snug mb-2">CCNP: Cisco Certified Network Professional</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">Advanced enterprise routing, switching and network troubleshooting.</p>
                     </article>
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Cisco</span>
                             <span class="cert-pills"><span class="cert-level">Associate</span></span>
@@ -595,7 +691,7 @@
 
                 <h3 class="cert-group">Service Management &amp; Training</h3>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">ITIL</span>
                             <span class="cert-pills"><span class="cert-level">Expert</span></span>
@@ -603,7 +699,7 @@
                         <h4 class="text-lg font-semibold leading-snug mb-2">ITIL Expert</h4>
                         <p class="text-sm text-slate-400 leading-relaxed">Advanced IT service management across the full service lifecycle.</p>
                     </article>
-                    <article class="cert-card reveal">
+                    <article class="cert-card spotlight reveal">
                         <div class="cert-meta">
                             <span class="cert-issuer">Microsoft</span>
                             <span class="cert-pills"></span>
@@ -672,22 +768,6 @@
                    class="social-link" aria-label="Substack">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
-                    </svg>
-                </a>
-
-                <!-- Pinterest -->
-                <a href="https://www.pinterest.com/ashesule/" target="_blank" rel="noopener noreferrer"
-                   class="social-link" aria-label="Pinterest">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
-                    </svg>
-                </a>
-
-                <!-- Scribd -->
-                <a href="https://www.scribd.com/user/914791801/Ashe-Sule" target="_blank" rel="noopener noreferrer"
-                   class="social-link" aria-label="Scribd">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.5 6.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5S9 8.828 9 8s.672-1.5 1.5-1.5zm3 11c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm-1.125-4.875c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2z"/>
                     </svg>
                 </a>
             </div>
