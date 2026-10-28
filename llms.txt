@@ -2,6 +2,8 @@ Ashe Sule is an IT Professional and AI engineer with extensive expertise in AI e
 
 He designs and builds AI-powered applications and intelligent agents on Microsoft Azure with Microsoft Foundry, including retrieval-augmented generation (RAG), multi-agent workflows, and quality and safety evaluation, with a security-first approach.
 
+At work (IT Manager at a manufacturer) he builds the tools the business runs on: an internal request hub (10 request types into HubSpot), a visitor sign-in kiosk with Microsoft Teams alerts and Microsoft 365 sign-in, ERP-connected shipping label printing for Zebra printers, a QuickBooks Desktop sync, an invoice generator that reads order PDFs, a product configurator with live pricing, a car wash site analysis tool, and client websites. He also runs security awareness training, Microsoft 365 migrations, network security and CRM administration.
+
 Education: Bachelor of Science (B.Sc.), Covenant University.
 
 Certifications: CISSP; Microsoft 365 Enterprise Administrator Expert; Microsoft 365 Security Administrator Associate; SC-401 Administering Information Security in Microsoft 365; SC-200 Security Operations Analyst; AZ-500 Azure Security Engineer; AI-103 Developing AI Apps and Agents on Azure; Azure Administrator; Cisco CCNP; Cisco CCNA; ITIL Expert; Microsoft Certified Trainer (MCT).

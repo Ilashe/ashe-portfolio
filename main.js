@@ -38,7 +38,7 @@ function setupReveal() {
 // Highlight the nav link for the section in view
 function setupScrollSpy() {
     var links = document.querySelectorAll('.nav-link');
-    var sections = ['home', 'projects', 'about', 'skills', 'certifications', 'connect']
+    var sections = ['home', 'projects', 'work', 'about', 'skills', 'certifications', 'connect']
         .map(function (id) { return document.getElementById(id); })
         .filter(Boolean);
     if (!sections.length || !('IntersectionObserver' in window)) return;
@@ -237,6 +237,7 @@ function setupPalette() {
     var at = function (id) { return (home ? '' : '/') + '#' + id; };
     var entries = [
         { label: 'Projects', hint: 'Section', href: at('projects') },
+        { label: 'What I build at work', hint: 'Section', href: at('work') },
         { label: 'About', hint: 'Section', href: at('about') },
         { label: 'Skills', hint: 'Section', href: at('skills') },
         { label: 'Certifications', hint: 'Section', href: at('certifications') },
