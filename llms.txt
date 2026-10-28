@@ -9,5 +9,6 @@ Certifications: CISSP; Microsoft 365 Enterprise Administrator Expert; Microsoft 
 Projects: Spot the Phish, a security awareness training SaaS (daily phishing challenge, tap-the-red-flag mechanic, readiness score, certificates, Microsoft 365 sync): https://ashesule.com/projects/spot-the-phish/
 Projects: Sealed by NexuCentri, an electronic signature SaaS (signed, sealed and verifiable: PDF digital signatures, trusted timestamps, 11 signer languages, templates, bulk send, API): https://ashesule.com/projects/sealed/
 Projects: Verba by NexuCentri, private AI meeting notes (transcript, summary, decisions, action items and cited answers, all on the user's own computer with Whisper and a local AI model): https://ashesule.com/projects/verba/
+Projects: CloudSpend IQ, a multi-cloud FinOps app for AWS and Microsoft Azure (billing import, cost explorer, budgets, anomaly detection, backtested forecasting, cost allocation, verified savings and reports): https://ashesule.com/projects/cloudspend-iq/
 
 Website: https://ashesule.com/
