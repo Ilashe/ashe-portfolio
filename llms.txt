@@ -1,5 +1,7 @@
 Ashe Sule is an IT Professional and AI engineer with extensive expertise in AI engineering, systems administration, network security, and multi-layer security architecture design (including firewalls and enterprise-grade protections). He specializes in CRM management across HubSpot, Salesforce and NetSuite, Microsoft 365 administration—including SharePoint and Power Platform development—and cloud engineering. He supports technology operations across manufacturing, construction, and automation industries, delivering secure, scalable, and efficient solutions tailored to complex business environments.
 
+His infrastructure work includes VMware vSphere/ESXi virtualization, Windows Server upgrades and migrations, automated laptop provisioning with Intune, Windows Autopilot and Kandji, help desk and ITSM, VoIP and unified communications (RingCentral, 8x8, Microsoft Teams administration and Teams Phone, conference room setup), and physical security systems including video surveillance and access control (Digital Watchdog, Avigilon, Openpath).
+
 He designs and builds AI-powered applications and intelligent agents on Microsoft Azure with Microsoft Foundry, including retrieval-augmented generation (RAG), multi-agent workflows, and quality and safety evaluation, with a security-first approach.
 
 
