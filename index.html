@@ -195,81 +195,6 @@
                 </div>
 
                 <article class="project-card spotlight reveal">
-                    <a href="/projects/spot-the-phish/" class="project-shot" aria-label="Spot the Phish: view the project">
-                        <img class="vt-phish" src="/images/projects/spot-the-phish/home.webp" width="1200" height="750" alt="Spot the Phish landing page: the 5-minute habit that teaches your team to spot the phish" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-body">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="skill-tag skill-tag-gold">Security awareness SaaS</span>
-                        </div>
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Spot the Phish</h3>
-                        <p class="text-slate-300 mb-5">
-                            Phishing training your team actually finishes: a 5-minute daily challenge with realistic emails, instant lessons on every red flag,
-                            certificates and audit-ready reports. Built to compete with the big names in security awareness.
-                        </p>
-                        <ul class="project-points">
-                            <li><strong>Tap the red flag:</strong> people flag the exact sender, link or attachment that gave it away</li>
-                            <li><strong>Readiness score</strong> and next best actions for admins</li>
-                            <li><strong>Microsoft 365 &amp; Google</strong> sign-in and automatic staff sync</li>
-                            <li><strong>187 automated tests</strong>, accessible (WCAG AA), 0 known vulnerabilities</li>
-                        </ul>
-                        <div class="flex flex-wrap gap-3 mt-6">
-                            <a href="/projects/spot-the-phish/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
-                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Spot the Phish mini-game (shown only when JavaScript runs) -->
-                <div id="phish-game" class="phish-game">
-                    <div class="phish-intro">
-                        <p class="section-eyebrow">Try it now</p>
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Can you spot the phish?</h3>
-                        <p class="text-slate-300 mb-5">This practice email hides 5 red flags. Tap every part that looks wrong. It takes about 30 seconds.</p>
-                        <div class="phish-meter" aria-hidden="true"><span class="phish-meter-fill"></span></div>
-                        <p class="phish-score text-sm font-semibold text-white" aria-live="polite"></p>
-                        <p class="phish-hint" aria-live="polite"></p>
-                    </div>
-                    <div class="phish-email" role="group" aria-label="Practice email">
-                        <div class="phish-meta">
-                            <div class="phish-meta-row">
-                                <span class="phish-meta-label">From</span>
-                                <button type="button" class="phish-spot" aria-pressed="false" data-flag data-title="Lookalike sender" data-why="The address is coldrivex-support.co, not the real coldrivex.com.">IT Service Desk &lt;it-desk@coldrivex-support.co&gt;</button>
-                            </div>
-                            <div class="phish-meta-row">
-                                <span class="phish-meta-label">To</span>
-                                <button type="button" class="phish-spot">jordan.lee@coldrivex.com</button>
-                            </div>
-                            <div class="phish-meta-row">
-                                <span class="phish-meta-label">Subject</span>
-                                <button type="button" class="phish-spot font-semibold text-white" aria-pressed="false" data-flag data-title="Panic and a deadline" data-why="Urgency is there to rush you past your better judgment.">URGENT: Your mailbox will be deleted in 2 hours</button>
-                            </div>
-                        </div>
-                        <div class="phish-body">
-                            <p><button type="button" class="phish-spot" aria-pressed="false" data-flag data-title="Generic greeting" data-why="Your own IT team knows your name.">Dear valued user,</button></p>
-                            <p><button type="button" class="phish-spot">We are upgrading our email servers this week. To keep your messages and contacts, please confirm your account using the button below.</button></p>
-                            <p><button type="button" class="phish-spot phish-button" aria-pressed="false" data-flag data-title="Password request" data-why="The button opens coldrivex.account-verify.net, a fake sign-in page. IT will never ask for your password by email.">Keep my mailbox</button></p>
-                            <p><button type="button" class="phish-spot phish-attachment" aria-pressed="false" data-flag data-title="Disguised attachment" data-why="&ldquo;.pdf.exe&rdquo; is a program pretending to be a PDF.">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.6l-9.2 9.2a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
-                                Mailbox_Policy.pdf.exe
-                            </button></p>
-                            <p><button type="button" class="phish-spot text-slate-400">Thank you,<br>Coldrivex IT Team</button></p>
-                        </div>
-                    </div>
-                    <div class="phish-side">
-                        <ul class="phish-found" aria-label="Red flags found"></ul>
-                        <div class="flex flex-wrap gap-3 mt-auto">
-                            <button type="button" class="btn-gold-outline px-5 py-2.5 rounded-lg font-semibold" data-phish-reveal>Show me the answers</button>
-                            <div class="phish-finish flex flex-wrap gap-3" hidden>
-                                <a href="/projects/spot-the-phish/" class="btn-gold px-5 py-2.5 rounded-lg font-semibold">See the full product</a>
-                                <button type="button" class="btn-gold-outline px-5 py-2.5 rounded-lg font-semibold" data-phish-reset>Play again</button>
-                            </div>
-                        </div>
-                        <p class="text-xs text-slate-500 mt-4">Practice email for a fictional company. Nothing here is a real link.</p>
-                    </div>
-                </div>
-
-                <article class="project-card spotlight reveal mt-8">
                     <a href="/projects/koinorix/" class="project-shot" aria-label="KOINORIX: view the project">
                         <img class="vt-koinorix" src="/images/projects/koinorix/dashboard.webp" width="1200" height="750" alt="KOINORIX dashboard in dark mode: open deals, pipeline by stage, won deals by month and open tickets by priority" loading="lazy" decoding="async">
                     </a>
@@ -374,6 +299,81 @@
                         </div>
                     </div>
                 </article>
+
+                <article class="project-card spotlight reveal mt-8">
+                    <a href="/projects/spot-the-phish/" class="project-shot" aria-label="Spot the Phish: view the project">
+                        <img class="vt-phish" src="/images/projects/spot-the-phish/home.webp" width="1200" height="750" alt="Spot the Phish landing page: the 5-minute habit that teaches your team to spot the phish" loading="lazy" decoding="async">
+                    </a>
+                    <div class="project-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag skill-tag-gold">Security awareness SaaS</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Spot the Phish</h3>
+                        <p class="text-slate-300 mb-5">
+                            Phishing training your team actually finishes: a 5-minute daily challenge with realistic emails, instant lessons on every red flag,
+                            certificates and audit-ready reports. Built to compete with the big names in security awareness.
+                        </p>
+                        <ul class="project-points">
+                            <li><strong>Tap the red flag:</strong> people flag the exact sender, link or attachment that gave it away</li>
+                            <li><strong>Readiness score</strong> and next best actions for admins</li>
+                            <li><strong>Microsoft 365 &amp; Google</strong> sign-in and automatic staff sync</li>
+                            <li><strong>187 automated tests</strong>, accessible (WCAG AA), 0 known vulnerabilities</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <a href="/projects/spot-the-phish/" class="btn-gold px-6 py-3 rounded-lg font-semibold">View project</a>
+                            <a href="https://www.linkedin.com/in/ashe-s-a5156119a" target="_blank" rel="noopener noreferrer" class="btn-gold-outline px-6 py-3 rounded-lg font-semibold">Request a demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Spot the Phish mini-game (shown only when JavaScript runs) -->
+                <div id="phish-game" class="phish-game">
+                    <div class="phish-intro">
+                        <p class="section-eyebrow">Try it now</p>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">Can you spot the phish?</h3>
+                        <p class="text-slate-300 mb-5">This practice email hides 5 red flags. Tap every part that looks wrong. It takes about 30 seconds.</p>
+                        <div class="phish-meter" aria-hidden="true"><span class="phish-meter-fill"></span></div>
+                        <p class="phish-score text-sm font-semibold text-white" aria-live="polite"></p>
+                        <p class="phish-hint" aria-live="polite"></p>
+                    </div>
+                    <div class="phish-email" role="group" aria-label="Practice email">
+                        <div class="phish-meta">
+                            <div class="phish-meta-row">
+                                <span class="phish-meta-label">From</span>
+                                <button type="button" class="phish-spot" aria-pressed="false" data-flag data-title="Lookalike sender" data-why="The address is coldrivex-support.co, not the real coldrivex.com.">IT Service Desk &lt;it-desk@coldrivex-support.co&gt;</button>
+                            </div>
+                            <div class="phish-meta-row">
+                                <span class="phish-meta-label">To</span>
+                                <button type="button" class="phish-spot">jordan.lee@coldrivex.com</button>
+                            </div>
+                            <div class="phish-meta-row">
+                                <span class="phish-meta-label">Subject</span>
+                                <button type="button" class="phish-spot font-semibold text-white" aria-pressed="false" data-flag data-title="Panic and a deadline" data-why="Urgency is there to rush you past your better judgment.">URGENT: Your mailbox will be deleted in 2 hours</button>
+                            </div>
+                        </div>
+                        <div class="phish-body">
+                            <p><button type="button" class="phish-spot" aria-pressed="false" data-flag data-title="Generic greeting" data-why="Your own IT team knows your name.">Dear valued user,</button></p>
+                            <p><button type="button" class="phish-spot">We are upgrading our email servers this week. To keep your messages and contacts, please confirm your account using the button below.</button></p>
+                            <p><button type="button" class="phish-spot phish-button" aria-pressed="false" data-flag data-title="Password request" data-why="The button opens coldrivex.account-verify.net, a fake sign-in page. IT will never ask for your password by email.">Keep my mailbox</button></p>
+                            <p><button type="button" class="phish-spot phish-attachment" aria-pressed="false" data-flag data-title="Disguised attachment" data-why="&ldquo;.pdf.exe&rdquo; is a program pretending to be a PDF.">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21.4 11.6l-9.2 9.2a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg>
+                                Mailbox_Policy.pdf.exe
+                            </button></p>
+                            <p><button type="button" class="phish-spot text-slate-400">Thank you,<br>Coldrivex IT Team</button></p>
+                        </div>
+                    </div>
+                    <div class="phish-side">
+                        <ul class="phish-found" aria-label="Red flags found"></ul>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <button type="button" class="btn-gold-outline px-5 py-2.5 rounded-lg font-semibold" data-phish-reveal>Show me the answers</button>
+                            <div class="phish-finish flex flex-wrap gap-3" hidden>
+                                <a href="/projects/spot-the-phish/" class="btn-gold px-5 py-2.5 rounded-lg font-semibold">See the full product</a>
+                                <button type="button" class="btn-gold-outline px-5 py-2.5 rounded-lg font-semibold" data-phish-reset>Play again</button>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-4">Practice email for a fictional company. Nothing here is a real link.</p>
+                    </div>
+                </div>
 
             </div>
         </section>
