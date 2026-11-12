@@ -242,6 +242,7 @@ function setupPalette() {
         { label: 'Certifications', hint: 'Section', href: at('certifications') },
         { label: 'Try Spot the Phish', hint: 'Mini-game', href: at('phish-game') },
         { label: 'Spot the Phish', hint: 'Project', href: '/projects/spot-the-phish/' },
+        { label: 'KOINORIX', hint: 'Project', href: '/projects/koinorix/' },
         { label: 'Sealed', hint: 'Project', href: '/projects/sealed/' },
         { label: 'Verba', hint: 'Project', href: '/projects/verba/' },
         { label: 'CloudSpend IQ', hint: 'Project', href: '/projects/cloudspend-iq/' },

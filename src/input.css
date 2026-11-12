@@ -822,6 +822,7 @@
     .vt-phish { view-transition-name: shot-phish; }
     .vt-sealed { view-transition-name: shot-sealed; }
     .vt-verba { view-transition-name: shot-verba; }
+    .vt-koinorix { view-transition-name: shot-koinorix; }
     .vt-cloudspend { view-transition-name: shot-cloudspend; }
 
     /* ---------- Low-end phones: frosted glass is expensive to scroll ---------- */
